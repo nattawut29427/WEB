@@ -14,7 +14,16 @@ export default {
       'blue': '#000428',
       'cyc': '#004E94',
       'white': '#fff',
-      'bluehover':'#AEC8FC',
+      'M_Light':'#AEC8FC',
+      'D_Black':'#1D1D1F',
+      'Red':'#CE4343',
+      'D_Gray':'525252',
+      'M_Gray':'#677689',
+      'L_Gray':'#677689',
+      'Light':'#658DF1',
+      'D_Blue':'#3563E9',
+      'M_Blue':'#1A37A7'
+
     },
   },
   plugins: [require("daisyui")],

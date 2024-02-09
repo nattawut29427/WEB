@@ -9,3 +9,171 @@
 }
 
 
+.container-qurey{
+    container-type: inline-size;
+    margin: auto;
+}
+
+.form{
+    font-size: 20px;
+}
+
+input::placeholder {
+    border-radius: 4px;
+    font-weight: 100;
+  }
+
+
+ textarea {
+    resize: none;
+    height: 250px;
+    border: 2px solid #658DF1;
+    border-radius: 4px;
+    width: 550px;
+    padding: 10px;
+  } 
+
+  textarea[type=text]{
+    font-weight: 500;
+  }
+
+  input[type=number]{
+    font-weight: 500;
+    color: #658DF1;
+  }
+
+  input[type=text]{
+    font-weight: 500;
+    color: #658DF1;
+  }
+
+.input-bordered{
+    border-color: #658DF1;
+    border: 2px solid;
+}
+
+.right{
+ visibility: hidden;
+}
+
+.wrong{
+  visibility: hidden;
+}
+
+
+label{
+  margin-right: 100px;
+  font-size: 20px;
+  color: #1A37A7;
+}
+
+i{
+  position: absolute;
+  visibility: hidden;
+  margin-top: 5px;
+  right: 550px;
+}
+
+/* form{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  
+} */
+
+input{
+  width: 550px;
+}
+
+small{
+  position: absolute;
+  visibility: hidden;
+  margin-top: 50px;
+  right: 940px;
+  color: #CE4343;
+  
+}
+
+
+.form-edit.success textarea.check-s{
+  visibility: visible;
+}
+
+.form-edit.success textarea{
+  border: 2px solid #1DD329;
+}
+
+.form-edit.error textarea{
+  border: 2px solid #CE4343;
+}
+
+.form-edit.error textarea.check-e{
+  visibility: visible;
+}
+
+
+
+
+.form-edit p#imgfile{
+  border: 2px solid #658DF1
+}
+
+.form-edit.success p#imgfile{
+  border: 2px solid #1DD329
+}
+
+.form-edit.error p#imgfile{
+  border: 2px solid #CE4343
+}
+
+
+
+
+.form-edit.success input{
+  border: 2px solid #1DD329;
+  
+}
+
+.form-edit.error input{
+  border: 2px solid #CE4343;
+}
+
+
+.form-edit.success i.check-s{
+  visibility: visible;
+}
+
+
+.form-edit.error i.check-e{
+  visibility: visible;
+}
+
+.form-edit.error small {
+  visibility: visible;
+}
+
+
+form textarea{
+  resize: none;
+  height: 250px;
+  border: 2px solid #658DF1; 
+  border-radius: 4px;
+  font-weight: 100;
+}
+
+ form.error textarea{
+  resize: none;
+  height: 250px;
+  border: 2px solid #CE4343; 
+  border-radius: 4px;
+  font-weight: 100;
+} 
+
+ form.success textarea{
+  resize: none;
+  height: 250px;
+  border: 2px solid #1DD329; 
+  border-radius: 4px;
+  font-weight: 100;
+} 

@@ -1,0 +1,252 @@
+<template>
+  <div class="w-[1000px] flex h-[1500px] m-auto mt[100px]">
+    <div class="m-auto w-full h-[1000px] items-center">
+      <div class="text-[36px] font-bold text-M_Blue">
+        <h2>ลงสินค้า</h2>
+      </div>
+      <form class="mx-20 mt-20 form" id="form">
+        <div class="form-edit flex justify-between">
+          <label for="">ชื่อของสินค้า</label>
+          <input
+            type="text"
+            placeholder="ใส่ชื่อของสินค้าที่ต้องการขาย"
+            class="input input-bordered focus:outline-none"
+            id="name_product"
+          />
+          <i class="text-C-green check-s"><Icon name="i-ion-checkmark-circled" /></i>
+          <i class="text-Red check-e"><Icon name="i-ion-close-circled" /></i>
+          <small class="right-[940px]">Error message</small>
+        </div>
+
+        <div class="form-edit flex justify-between mt-[40px]">
+          <label for="">ราคาของสินค้า</label>
+          <input
+            type="number"
+            placeholder="ใส่ราคาของสินค้า"
+            class="input input-bordered focus:outline-none"
+            id="price_product"
+         />
+          <i class="text-C-green check-s"><Icon name="i-ion-checkmark-circled" /></i>
+          <i class="text-Red check-e"><Icon name="i-ion-close-circled" /></i>
+          <small class="right-[930px]">Error message</small>
+        </div>
+
+        <div action="" class="mt-[40px] form-edit flex justify-between" id="">
+          <label for="">รายระเอียดของสินค้า</label>
+          <textarea  class="font-medium  text-Light placeholder: text-[16px]" placeholder="ใส่รายระเอียดของสินค้า" id="info_product"></textarea>
+          <i class="text-C-green check-s"><Icon name="i-ion-checkmark-circled" /></i>
+          <i class="text-Red check-e"><Icon name="i-ion-close-circled" /></i>
+          <small class="mt-[250px]  right-[898px]">Error message</small>
+        </div>
+
+        <div class="flex mt-[40px] form-edit  justify-between" action="">
+          <label for="">รูปของสินค้า</label>
+          <p id="imgfile" class="border-2 w-[550px] h-[150px] ">
+            <div class="p-2 pl-2 pb-1 ">
+              <!-- <i class="right-[970px] top-[810px] text-[50px]"><Icon name="i-ion-images-outline" /></i> -->
+              <input type="file" id="img" hidden>
+              <label for="img" class="btn flex bg-L_white h-[125px] w-[150px] hover:bg-M_Light" >
+                <p class="right-[970px] top-[870px] text-[50px] text-Light"
+                  ><Icon name="i-ion-images-outline"
+                /></p>
+              </label> 
+              
+            </div>
+          </p>
+          <i class="text-C-green check-s"><Icon name="i-ion-checkmark-circled" /></i>
+          <i class="text-Red check-e"><Icon name="i-ion-close-circled" /></i>
+          <small class="mt-[150px] right-[950px]">Error message</small>    
+        </div>
+
+        <div class="mt-[40px] form-edit flex justify-between">
+          <label for="">เบอร์ติดต่อ</label>
+          <input
+            type="number"
+            placeholder="กรุณาใส่เบอร์ที่สามาถรติดต่อได้"
+            class="input input-bordered focus:outline-none"
+            id="number_product"
+          />
+          <i class="text-C-green check-s"><Icon name="i-ion-checkmark-circled" /></i>
+          <i class="text-Red check-e"><Icon name="i-ion-close-circled" /></i>
+          <small>Error message</small>
+        </div>
+
+        <div  class="mt-[40px] form-edit flex justify-between">
+          <label for="">หัวข้อที่ต้องการขาย</label>
+          <input
+            type="text"
+            placeholder="ประมูล/ขายปกติ"
+            class="input input-bordered focus:outline-none"
+            id="typeof_product"
+          />
+          <i class="text-C-green check-s"><Icon name="i-ion-checkmark-circled" /></i>
+          <i class="text-Red check-e"><Icon name="i-ion-close-circled" /></i>
+          <small class="right-[890px]">Error message</small>
+        </div>
+
+        <div class="flex justify-end mt-[30px]">
+          <button
+            class="btn w-[120px] btn-xs rounded-full sm:btn-sm md:btn-md lg:btn-lg"
+          >
+            ลบ
+          </button>
+          <button 
+            class="btn bg-Light text-white text-[42px] w-[200px] rounded-full ml-5 btn-xs hover:bg-D_Blue sm:btn-sm md:btn-md lg:btn-lg"
+          >
+            โพสต์เลย
+          </button>
+        </div>     
+      </form>
+    </div>
+  </div>
+</template>
+
+
+<!-- ///////////////////////////////////////------------------- SCRIPT -------------///////////////////////////////////////////////////////////// -->
+
+
+
+<script setup>
+
+
+onMounted(() => {
+ if (process.client) {
+    const form = document.getElementById('form');
+    const product_name = document.getElementById('name_product');
+    const price = document.getElementById('price_product');
+    const info = document.getElementById('info_product');
+    const file = document.getElementById('img');
+    const type = document.getElementById('typeof_product');
+    const phone = document.getElementById('number_product');
+
+    
+
+    form.addEventListener('submit', (e) =>{
+      e.preventDefault();
+
+      checkInputs();
+    })
+    function checkInputs(){
+      //ดึงข้อมูลจาก input
+      const productValue = product_name.value.trim();
+      const priceValue = price.value.trim();
+      const infoValue = info.value.trim();
+      const fileValue  = file.value.trim();
+      const typeValue = type.value.trim();
+      const phoneValue = phone.value.trim();
+
+      
+      if(productValue ===''){
+        // show error
+        // add error class
+        
+        setErrorFor(product_name, 'โปรดใส่ชื่อของสินค้า');
+      
+      } else{
+        
+        // add success class
+        
+        setSuccessFor(product_name);
+      }
+      
+      if(priceValue ===''){
+        // show error
+        // add error class
+        
+        setErrorFor(price, 'โปรดใส่ราคาของสินค้า');
+      
+      } else{
+        
+        // add success class
+        
+        setSuccessFor(price);
+      }    
+
+      if(infoValue ===''){
+        // show error
+        // add error class
+        setErrorFor(info_product, 'โปรดใส่รายระเอียดของสินค้า');
+      
+      } else{
+        
+        // add success class
+        
+        setSuccessFor(info_product); 
+      }    
+
+      if(fileValue ===''){
+        // show error
+        // add error class
+        
+        setErrorFor(file,'โปรดใส่รูปของสินค้า');
+      
+      } else{
+        
+        // add success class
+        
+        setSuccessFor(file); 
+      }    
+
+      if( phoneValue ===''){
+        // show error
+        // add error class
+        
+        setErrorFor(phone, 'โปรดใส่เบอร์โทรศัพท์');
+      
+      } else{
+        
+        // add success class
+        
+        setSuccessFor(phone);
+      }    
+
+      if( typeValue ===''){
+        // show error
+        // add error class
+        
+        setErrorFor(type, 'โปรดใส่ประเภทที่ต้องการขาย');
+      
+      } else{
+        
+        // add success class
+        
+        setSuccessFor(type);
+      }    
+
+      
+    }
+
+    
+    
+    
+    function setErrorFor(input, message){
+      const formedit = input.closest('.form-edit');
+      const small = formedit.querySelector('small');
+      small.innerText = message;
+      formedit.classList.remove('success')
+      formedit.classList.add('error')
+    }
+
+    function setSuccessFor(input) {
+      const formedit = input.closest('.form-edit');
+      formedit.classList.remove('error')
+      formedit.classList.add('success')
+    }
+
+//     function handleKeyup() {
+//     checkKeyInputs();
+// }
+
+//     function checkKeyInputs(){
+//       product_name.addEventListener('keyup', handleKeyup);
+//       price.addEventListener('keyup', handleKeyup);
+//       info.addEventListener('keyup', handleKeyup);
+//       file.addEventListener('keyup', handleKeyup);
+//       type.addEventListener('keyup', handleKeyup);
+//       phone.addEventListener('keyup', handleKeyup);
+//     }
+   
+
+  }
+})
+</script>

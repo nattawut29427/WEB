@@ -22,10 +22,13 @@ export default {
       'L_Gray':'#677689',
       'Light':'#658DF1',
       'D_Blue':'#3563E9',
-      'M_Blue':'#1A37A7'
-
+      'M_Blue':'#1A37A7',
+      'T-gray':'#323949',
+      'C-green' : '#1DD329',
+      'L_white' : '#E5EEFF'
     },
   },
   plugins: [require("daisyui")],
 }
 
+ 

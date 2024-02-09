@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar h-[130px] fixed bg-gradient-to-r from-blue to-cyc">
+  <div class="navbar z-50 h-[130px] fixed bg-gradient-to-r from-blue to-cyc">
     <div class="absolute top-0 end-0 m-0 ">
       <div class="flex mr-4 mt-3 p-1
        text-white text-sm
@@ -27,7 +27,7 @@
         <li><a>Item 3</a></li>
       </ul>
     </div>
-    <a class="btn btn-ghost text-[32px] font-bold text-white ml-[2] lg:ml-0">Second UP</a>
+    <a class="btn btn-ghost text-[32px] font-bold text-white ml-[2] lg:ml-0" href="http://localhost:3000/">Second UP</a>
   </div>
   <div class="navbar-end hidden mr-[262px] mt-10 lg:flex">
     <ul class="menu menu-horizontal px-2">
@@ -63,7 +63,8 @@
         </li>
       </ul>
     <div>
-    <a class="btn w-[142px] rounded-3xl pr-6"><img src="/pic/Arhive_load_duotone_line.png" alt="" />ลงขาย</a>
+    <!-- ค่อยเเก้ตอนมี back-end -->
+    <a href="order" class="btn w-[142px] rounded-3xl pr-6"><img src="/pic/Arhive_load_duotone_line.png" alt="" />ลงขาย</a>
   </div>
   </div>
 </div>

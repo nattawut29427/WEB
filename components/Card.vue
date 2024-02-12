@@ -1,8 +1,8 @@
 <template>
-  <div class="flex items-center justify-center mt-[200px]">
+  <div class="grid  gap-3 lg:flex items-center justify-center mt-[200px]">
     <div
-      class="card rounded-[24px] ml-7 w-[390px] h-[400px] text-white bg-l_Gray shadow-xl"
-    >
+      class="card rounded-[24px] ml-7 h-80 lg:w-[390px] lg:h-[400px] text-white bg-l_Gray shadow-xl"
+      v-for="user in users" :key="user.id">
       <div class="card-body p-[12px] rounded-t-[24px]  bg-D_Black">
         <div class="flex justify-between">
           <div class="flex">
@@ -10,14 +10,12 @@
               <div
                 class="w-10 rounded-full mt-2 ring ring-primary ring-offset-base-100 ring-offset-2"
               >
-                <img
-                  src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
-                />
+              <nuxt-img :src="user.user_profile" alt="" /> 
               </div>
             </div>
             <div class="inline-block">
-              <p class="ml-[55px] font-bold">USER</p>
-              <p class="ml-[55px] mt-1 text-sm text-M_Gray">ผู้ติดตาม 100k</p>
+              <p class="ml-[55px] font-bold">{{ user.name }}</p>
+              <p class="ml-[55px] mt-1 text-sm text-L_Gray">ผู้ติดตาม {{user.follow}}</p>
             </div>
           </div>
           <div
@@ -36,15 +34,11 @@
         </div>
       </div>
       <figure>
-        <img
-          src="https://www.kito.co.th/wp-content/uploads/2019/07/Kito-BE7-Black-AA.jpg"
-          alt="Shoes"
-          class="h-[320px] w-auto"
-        />
+        <nuxt-img class="h-[320px] w-auto" :src="user.product_img" alt="" /> 
         <button
-          class="absolute w-[120px] text-center ml-[250px] mt-[250px] rounded-3xl h-[45px] bg-T-gray"
+          class="btn bg-D_Black border-0 font-thin text-[16px]  text-white absolute w-[130px] text-center hover:bg-T-gray lg:ml-[250px] lg:mt-[250px] rounded-3xl h-[45px]"
         >
-          <p class="p-2 font-400">เข้าร่วมประมูล</p>
+             เข้าร่วมประมูล
         </button>
       </figure>
     </div>
@@ -52,6 +46,12 @@
 </template>
 
 <script setup>
+
+import { ref } from "vue";
+import userData from "/Data/DB_card.json";
+
+const users = ref(userData);
+
 const props = defineProps({
   endtime: {
     type: String,
@@ -59,12 +59,12 @@ const props = defineProps({
   },
   new_img: {
     type: String,
-    default: ""
+    default: "",
   }
 });
 
 
-const new_img = ref();
+const new_img = ref('');
 
 const hours = ref(0);
 const min = ref(0);

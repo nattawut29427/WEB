@@ -4,128 +4,33 @@
       สินค้าล่าสุด
     </h1>
   </div>
+  
   <div class="flex text-center gap-2 ml-10 mt-[250px] justify-center">
-    <div class="card jus card-compact w-[300px] bg-base-100 shadow-xl">
+    <div v-for=" user2 in users2" :key="user2.id" class="card jus card-compact w-[300px] bg-base-100 shadow-xl">
+      <NuxtLink :to="user2.link_page" target="_blank">
       <figure>
-        <img
-          src="https://apxofficialstore.com/wp-content/uploads/2022/09/VN0A5JMIB9J_015.jpg"
-          alt="Shoes"
-          class="h-[300px] w-full"
-        />
+        <nuxt-img class="h-[300px] w-fit" :src="user2.product_img" alt="" /> 
       </figure>
+    </NuxtLink>
       <div class="card-body">
-        <h2 class="card-title">Vans Oldscool</h2>
-        <p class="text-start text-[18px] font-bold mb-4">$400</p>
+        <h2 class="card-title font-bold">{{ user2.product_name }}</h2>
+        <p class="text-start text-[18px] font-bold mb-4">{{ user2.product_price }}</p>
         <div class="avatar absolute left-[10px] bottom-3">
           <div
-            class="w-10 m-1 absolute bottom-1 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2"
+            class="w-10 m-1 absolute bottom-1 rounded-full border-2 border-Light"
           >
-            <img
-              src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
-            />
+            <nuxt-img :src="user2.user_profile" alt="" /> 
           </div>
         </div>
         <div class="inline-block bottom-5 left-3 absolute">
-          <p class="ml-[55px] text-start font-bold">USER</p>
-          <p class="ml-[55px] mt-1 text-sm text-M_Gray">ผู้ติดตาม 100k</p>
+          <p class="ml-[55px] text-start font-bold">{{ user2.name }}</p>
+          <p class="ml-[55px] mt-1 text-sm text-M_Gray">ผู้ติดตาม {{ user2.follow }}</p>
         </div>
         <div class="card-actions justify-end">
           <button
-            class="btn  bg-D_Blue rounded-lg hover:bg-Light  w-[100px] text-[18px] font-thin text-white"><Icon name="cil:chat-bubble"/>เเชท
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class="card jus card-compact w-[300px] bg-base-100 shadow-xl">
-      <figure>
-        <img
-          src="https://apxofficialstore.com/wp-content/uploads/2022/09/VN0A5JMIB9J_015.jpg"
-          alt="Shoes"
-          class="h-[300px] w-full"
-        />
-      </figure>
-      <div class="card-body">
-        <h2 class="card-title">Vans Oldscool</h2>
-        <p class="text-start text-[18px] font-bold mb-4">$400</p>
-        <div class="avatar absolute left-[10px] bottom-3">
-          <div
-            class="w-10 m-1 absolute bottom-1 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2"
+            class="btn  bg-D_Blue rounded-lg hover:bg-Light w-[100px] text-[16px] font-thin text-white"
           >
-            <img
-              src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
-            />
-          </div>
-        </div>
-        <div class="inline-block bottom-5 left-3 absolute">
-          <p class="ml-[55px] text-start font-bold">USER</p>
-          <p class="ml-[55px] mt-1 text-sm text-M_Gray">ผู้ติดตาม 100k</p>
-        </div>
-        <div class="card-actions justify-end">
-          <i class="fa-regular fa-comment"></i>
-          <button
-            class="btn  bg-D_Blue rounded-lg hover:bg-Light  w-[100px] text-[18px] font-thin text-white"><Icon name="cil:chat-bubble"/>เเชท
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class="card jus card-compact w-[300px] bg-base-100 shadow-xl">
-      <figure>
-        <img
-          src="https://apxofficialstore.com/wp-content/uploads/2022/09/VN0A5JMIB9J_015.jpg"
-          alt="Shoes"
-          class="h-[300px] w-full"
-        />
-      </figure>
-      <div class="card-body">
-        <h2 class="card-title">Vans Oldscool</h2>
-        <p class="text-start text-[18px] font-bold mb-4">$400</p>
-        <div class="avatar absolute left-[10px] bottom-3">
-          <div
-            class="w-10 m-1 absolute bottom-1 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2"
-          >
-            <img
-              src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
-            />
-          </div>
-        </div>
-        <div class="inline-block bottom-5 left-3 absolute">
-          <p class="ml-[55px] text-start font-bold">USER</p>
-          <p class="ml-[55px] mt-1 text-sm text-M_Gray">ผู้ติดตาม 100k</p>
-        </div>
-        <div class="card-actions justify-end">
-          <button
-            class="btn  bg-D_Blue rounded-lg hover:bg-Light  w-[100px] text-[18px] font-thin text-white"><Icon name="cil:chat-bubble"/>เเชท
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class="card jus card-compact w-[300px] bg-base-100 shadow-xl">
-      <figure>
-        <img
-          src="https://apxofficialstore.com/wp-content/uploads/2022/09/VN0A5JMIB9J_015.jpg"
-          alt="Shoes"
-          class="h-[300px] w-full"
-        />
-      </figure>
-      <div class="card-body">
-        <h2 class="card-title">Vans Oldscool</h2>
-        <p class="text-start text-[18px] font-bold mb-4">$400</p>
-        <div class="avatar absolute left-[10px] bottom-3">
-          <div
-            class="w-10 m-1 absolute bottom-1 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2"
-          >
-            <img
-              src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
-            />
-          </div>
-        </div>
-        <div class="inline-block bottom-5 left-3 absolute">
-          <p class="ml-[55px] text-start font-bold">USER</p>
-          <p class="ml-[55px] mt-1 text-sm text-M_Gray">ผู้ติดตาม 100k</p>
-        </div>
-        <div class="card-actions justify-end">
-          <button
-            class="btn  bg-D_Blue rounded-lg hover:bg-Light  w-[100px] text-[18px] font-thin text-white"><Icon name="cil:chat-bubble"/>เเชท
+            <img class="h-6 w-6" src="/pic/Send_light.png"/>เเชท
           </button>
         </div>
       </div>
@@ -133,3 +38,9 @@
   </div>
 </template>
 
+<script setup>
+
+import userData from "/Data/DB_card2.json";
+
+const users2 = ref(userData);
+</script>

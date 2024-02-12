@@ -1,13 +1,13 @@
 <template>
-    <footer class="footer mt-[400px] p-10  bg-gradient-to-r from-blue to-cyc text-base-content">
-  <nav class="ml-[350px] text-white">
+  <footer class="footer  w-fit mt-[400px] lg:p-10 lg:w-full  bg-gradient-to-r from-blue to-cyc text-base-content">
+  <nav class="ml-[350px]   text-white">
     <h6 class="footer-title">เกี่ยวกับเรา</h6> 
     <a class="link link-hover">Branding</a>
     <a class="link link-hover">Design</a>
     <a class="link link-hover">Marketing</a>
     <a class="link link-hover">Advertisement</a>
   </nav> 
-  <nav class="text-white"> 
+  <nav class="text-white absolute lg:relative"> 
     <h6 class="footer-title">การช่วยเหลือ</h6> 
     <a class="link link-hover">About us</a>
     <a class="link link-hover">Contact</a>

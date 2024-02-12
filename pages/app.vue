@@ -14,7 +14,7 @@
             placeholder="ใส่ชื่อของสินค้าที่ต้องการขาย"
             class="input input-bordered focus:outline-none"
             id="name_product"
-            name="name_product"
+            name="Name_product"
           />
           <i class="text-C-green check-s"><Icon name="i-ion-checkmark-circled" /></i>
           <i class="text-Red check-e"><Icon name="i-ion-close-circled" /></i>
@@ -28,7 +28,7 @@
             placeholder="ใส่ราคาของสินค้า"
             class="input input-bordered focus:outline-none"
             id="price_product"
-            name="price"
+            name="Price"
          />
           <i class="text-C-green check-s"><Icon name="i-ion-checkmark-circled" /></i>
           <i class="text-Red check-e"><Icon name="i-ion-close-circled" /></i>
@@ -37,7 +37,7 @@
 
         <div action="" class="mt-[40px] form-edit flex justify-between" id="">
           <label for="">รายระเอียดของสินค้า</label>
-          <textarea  class="font-medium  text-Light placeholder: text-[16px] focus:outline-none focus:input-bordered" placeholder="ใส่รายระเอียดของสินค้า" id="info_product" name="info_product"></textarea>
+          <textarea name="Info_product"  class="font-medium  text-Light placeholder: text-[16px] focus:outline-none focus:input-bordered" placeholder="ใส่รายระเอียดของสินค้า" id="info_product" ></textarea>
           <i class="text-C-green check-s"><Icon name="i-ion-checkmark-circled" /></i>
           <i class="text-Red check-e"><Icon name="i-ion-close-circled" /></i>
           <small class="mt-[250px]  right-[898px]">Error message</small>
@@ -48,7 +48,7 @@
           <p id="imgfile" class="border-2 w-[550px] h-[150px] ">
             <div class="p-2 pl-2 pb-1 ">
               <!-- <i class="right-[970px] top-[810px] text-[50px]"><Icon name="i-ion-images-outline" /></i> -->
-              <input type="file" id="img" hidden name="pic">
+              <input type="file" id="img" hidden name="Pic"> 
               <label for="img" class="btn flex bg-L_white h-[125px] w-[150px] hover:bg-M_Light" >
                 <p class="right-[970px] top-[870px] text-[50px] text-Light"
                   ><Icon name="i-ion-images-outline"
@@ -68,8 +68,8 @@
             type="number"
             placeholder="กรุณาใส่เบอร์ที่สามาถรติดต่อได้"
             class="input input-bordered focus:outline-none"
-            id="number_product"
-            name="phone"
+            id="phone_user"
+            name="Phone"
           />
           <i class="text-C-green check-s"><Icon name="i-ion-checkmark-circled" /></i>
           <i class="text-Red check-e"><Icon name="i-ion-close-circled" /></i>
@@ -83,7 +83,7 @@
             placeholder="ประมูล/ขายปกติ"
             class="input input-bordered focus:outline-none"
             id="typeof_product"
-            name="db_type"
+            name="Db_type"
           />
           <i class="text-C-green check-s"><Icon name="i-ion-checkmark-circled" /></i>
           <i class="text-Red check-e"><Icon name="i-ion-close-circled" /></i>
@@ -114,12 +114,7 @@
 
 <script setup>
 
-
-
-
-
-
-
+import userData from "/Data/DB_card.json";
 
 onMounted(() => {
  if (process.client) {
@@ -154,22 +149,12 @@ onMounted(() => {
       const phoneValue = phone.value.trim();
 
 
+      console.log(phoneValue)
 
-      const formEl = document.querySelector('.form')
+      
 
-      const formData = new FormData(formEl);
-      const data = Object.fromEntries(formData)
-      console.log(data)
-      
-      
-      fetch('https://script.google.com/macros/s/AKfycbyiXMoLTUdE4QnMICV9LEa-QPKvvGyippBfZgerK3seK2mr0Fw5qwbwniwJXvO_DV4e9A/exec?action=addUser', {
-          method: 'POST',
-          headers: {
-                      'Content-Type': 'application/json'
-                   },
-          body: JSON.stringify(data),
-          mode: 'no-cors' 
-      })
+
+  
 
       
       if(productValue ===''){
@@ -269,7 +254,6 @@ onMounted(() => {
     
     function setDelFor(input) {
       const formedit = input.closest('.form-edit');
-      formedit.classList.remove('error');
       formedit.classList.remove('success');
     }
 
@@ -312,16 +296,12 @@ onMounted(() => {
         setDelFor(phone);
       }
 
-      if (typeKey === ''){
-       setDelFor(type);
-      } else if (typeKey === 'ประมูล' || typeKey === 'ขายปกติ' || typeKey === 'ขาย') {
-       setSuccessFor(type);
+      if (typeKey !== '') {
+        setSuccessFor(type);
       } else {
-       setErrorFor(type, 'ใส่ ประมูล หรือ ขาย เท่านั้น');
+        setDelFor(type);
       }
-
    
-
   }
     
 

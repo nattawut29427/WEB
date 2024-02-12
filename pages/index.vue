@@ -1,6 +1,6 @@
 <template>
   <Header />
-  <div class="carousel w-[350px] h-[250px] mx-[40px] mt-[190px] md:w-[600px] md:mx-[90px]  lg:w-[1200px] lg:h-[350px]  lg:mx-[365px] lg:mt-[200px]   ">
+  <div class="carousel w-fit h-[250px] mx-[40px] mt-[190px] md:w-[600px] md:mx-[90px]  lg:w-[1200px] lg:h-[350px]  lg:mx-[365px] lg:mt-[200px]   ">
     <div id="item1" class=" carousel-item  md:w-full w-full lg:w-full ">
       <img
         src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDFyb3poZzJ5MDdjYjg2ajhsbjNuNTI0dGs5cHd0dmFuczUxaWp4ciZlcD12MV92aWRlb3Nfc2VhcmNoJmN0PXY/iqU07uixfQCjzr9aEd/200w.webp"
@@ -10,17 +10,27 @@
   <div>
     <Button/>
   </div>
-  <div class="flex text-center items-start justify-start">
+   <div class="flex text-center items-start justify-start">
     <h1 class="absolute text-3xl font-bold mt-[120px] ml-[360px]">
       สินค้าประมูล
     </h1>
+  </div> 
+   <div class="" >
+    <Card  :endtime="endtime"/>
   </div>
-  <div class="flex items-center justify-center">
-    <Card endtime="12 February 2024"/>
-    <Card endtime="11 February 2024"/>
-    <Card endtime="10 February 2024"/>
-  </div>
- 
-  <Card2 />
-</template>
+  
+   <Card2 />  
+</template> 
 
+<script setup>
+import { ref } from "vue";
+import userData from "/Data/DB_card.json";
+
+const users = ref(userData);
+
+let endtime = (users.value[0].Time); 
+
+
+
+
+</script>

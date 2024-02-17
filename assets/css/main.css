@@ -47,6 +47,16 @@ input::placeholder {
     color: #658DF1;
   }
 
+  input[type=email]{
+    font-weight: 500;
+    color: #658DF1;
+  }
+
+  input[type=password]{
+    font-weight: 500;
+    color: #658DF1;
+  }
+
   input[type=text]{
     font-weight: 500;
     color: #658DF1;
@@ -72,11 +82,17 @@ label{
   color: #1A37A7;
 }
 
+/* #i2{
+  position: absolute;
+  visibility: hidden;
+  margin-top: 5px;
+} */
+
 i{
   position: absolute;
   visibility: hidden;
   margin-top: 5px;
-  right: 550px;
+  right: 550px; 
 }
 
 /* form{
@@ -95,7 +111,6 @@ small{
   position: absolute;
   visibility: hidden;
   margin-top: 50px;
-  right: 940px;
   color: #CE4343;
   
 }
@@ -117,7 +132,19 @@ small{
   visibility: visible;
 }
 
+.form-edit.error {
+  margin-bottom: 32px;
+}
 
+.form-edit.error #box{
+  border: 2px solid #CE4343;
+  border-right: none;
+}
+
+.form-edit.success #box{
+  border: 2px solid #1DD329;
+  border-right: none;
+}
 
 
 .form-edit p#imgfile{
@@ -150,7 +177,7 @@ small{
 }
 
 
-.form-edit.error i.check-e{
+.form-edit.error  i.check-e{
   visibility: visible;
 }
 

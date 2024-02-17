@@ -1,5 +1,5 @@
 <template>
-  <div class="grid  gap-3 lg:flex items-center justify-center mt-[200px]">
+  <div class="grid   lg:flex items-center justify-center mt-[200px]">
     <div
       class="card rounded-[24px] ml-7 h-80 lg:w-[390px] lg:h-[400px] text-white bg-l_Gray shadow-xl"
       v-for="user in users" :key="user.id">

@@ -25,7 +25,8 @@ export default {
       'M_Blue':'#1A37A7',
       'T-gray':'#323949',
       'C-green' : '#1DD329',
-      'L_white' : '#E5EEFF'
+      'L_white' : '#E5EEFF',
+      'C-white' : '#F8FAFB'
     },
   },
   plugins: [require("daisyui")],

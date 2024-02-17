@@ -29,21 +29,6 @@
     </div>
     <a class="btn btn-ghost text-[32px] font-bold text-white ml-[2] lg:ml-0" href="http://localhost:3000/">Second UP</a>
   </div>
-  <div class="navbar-end hidden mr-[262px] mt-12 lg:flex">
-    <ul class="menu menu-horizontal px-2">
-        <div class="flex">
-          <li><img src="/pic/Favorite.png" alt="" /></li>
-          <li><img src="/pic/Bag.png" alt="" /></li>
-        </div>
-        
-        <li>
-          
-           <a href="/login"><summary class="text-white p-3 mr-1 ">ลงทะเบียน/เข้าสู่ระบบ</summary></a>
-        </li>
-      </ul>
-    <div>
-    <a href="order" class="btn w-[142px] rounded-3xl pr-6"><img src="/pic/Arhive_load_duotone_line.png" alt="" />ลงขาย</a>
-  </div>
-  </div>
+  
 </div>
 </template>

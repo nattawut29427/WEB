@@ -29,21 +29,81 @@
     </div>
     <a class="btn btn-ghost text-[32px] font-bold text-white ml-[2] lg:ml-0" href="http://localhost:3000/">Second UP</a>
   </div>
-  <div class="navbar-end hidden mr-[262px] mt-12 lg:flex">
+  <div class="navbar-end hidden mr-[262px] mt-10 lg:flex">
     <ul class="menu menu-horizontal px-2">
-        <div class="flex">
+        <div class="flex mt-2">
           <li><img src="/pic/Favorite.png" alt="" /></li>
           <li><img src="/pic/Bag.png" alt="" /></li>
         </div>
-        
         <li>
-          
-           <a href="/login"><summary class="text-white p-3 mr-1 ">ลงทะเบียน/เข้าสู่ระบบ</summary></a>
+          <details>
+            <summary class="text-white p-3 mr-1 ">
+              <div class="avatar">
+              <div class="w-11 bottom-1 rounded-full border-2 border-Light">
+                <img src="/pic/f14f031d1ca1daf1b764cc300e4d39ee.jpg" alt="">
+              </div>
+            </div>
+            นัฐวุฒ อินทรพาณิชย์
+            </summary>
+            <ul class="w-[180px] rounded-none flex justify-center">
+              <div>
+                <li>
+                  <a><img src="/pic/User_alt_fill.png" alt="" />หน้าโปรไฟล์</a>
+                </li>
+                <li>
+                  <a><img src="/pic/Favorite (1).png" alt="" />รายการโปรด</a>
+                </li>
+                <li>
+                  <a><img src="/pic/Info.png" alt="" />ช่วยเหลือ</a>
+                </li>
+                <li>
+                  <a
+                    ><img
+                      src="/pic/Sign_in_squre_fill.png"
+                      alt=""
+                    />ออกจากระบบ</a
+                  >
+                </li>
+              </div>
+            </ul>
+          </details>
         </li>
       </ul>
     <div>
+    <!-- ค่อยเเก้ตอนมี back-end -->
     <a href="order" class="btn w-[142px] rounded-3xl pr-6"><img src="/pic/Arhive_load_duotone_line.png" alt="" />ลงขาย</a>
   </div>
   </div>
 </div>
 </template>
+
+<script>
+
+import axios from 'axios'
+
+export default {
+  name: "datapro",
+  data() {
+    return {
+      datapros: {},
+    }
+  },
+  mounted() {
+
+    this.getdata();
+
+  },
+  methods: {
+
+    getdata(){
+      axios.get('https://script.google.com/macros/s/AKfycbz2zMtIo3gI_J4gWVWtTdRMpc5-o1LmvXBWcNoh9pkNRgS7A9giQYwwUDb5-9G3yI3LRQ/exec?action=getUsers').then(res =>{
+
+        this.datapros = res.data;
+      });
+    }
+  }
+
+
+}
+
+</script>

@@ -116,11 +116,6 @@
 
 
 
-
-
-
-
-
 onMounted(() => {
  if (process.client) {
     const form = document.getElementById('form');
@@ -162,14 +157,15 @@ onMounted(() => {
       console.log(data)
       
       
-      fetch('https://script.google.com/macros/s/AKfycbyiXMoLTUdE4QnMICV9LEa-QPKvvGyippBfZgerK3seK2mr0Fw5qwbwniwJXvO_DV4e9A/exec?action=addUser', {
+      fetch('https://script.google.com/macros/s/AKfycbz8yDm_NV-u9ZPBDz4E6V5pssZkcanzdc7h13ryU-csYo7CXSSF0HAeqU0zk9d8QAsdeg/exec?action=addUser', {
           method: 'POST',
           headers: {
                       'Content-Type': 'application/json'
                    },
-          body: JSON.stringify(data),
+          body: JSON.stringify(data), 
           mode: 'no-cors' 
       })
+
 
       
       if(productValue ===''){
@@ -261,6 +257,7 @@ onMounted(() => {
       formedit.classList.add('error')
     }
 
+
     function setSuccessFor(input) {
       const formedit = input.closest('.form-edit');
       formedit.classList.remove('error')
@@ -306,11 +303,14 @@ onMounted(() => {
         setDelFor(info);
       }
     
-      if (phoneKey !== '') {
+      if(phoneKey !== '' && phoneKey.length === 10){
         setSuccessFor(phone);
+      } else if (phoneKey.length > 9) {
+        setErrorFor(phone, 'เบอร์เกิน10');
       } else {
         setDelFor(phone);
       }
+
 
       if (typeKey === ''){
        setDelFor(type);

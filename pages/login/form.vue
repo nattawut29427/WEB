@@ -1,4 +1,4 @@
 <template>
-  <Header />
+  <HeaderLogin />
   <From  />
 </template>

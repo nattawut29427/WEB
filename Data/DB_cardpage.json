@@ -1,0 +1,55 @@
+[
+    {
+    
+        "name": "Jhon",
+        "follow": "1k",
+        "user_profile": "https://i.pinimg.com/564x/f5/65/e2/f565e2609ba34ba6c24d9d21e0021b88.jpg",
+        "product_img" : "https://media.karousell.com/media/photos/products/2023/1/18/nike_sb_dunk_low_jpack_shadow_1674067000_78ccd87e_progressive.jpg",
+        
+        "link_page":"/login/products/action/info4"
+    },
+    {
+      
+        "name": "List",
+        "follow": "2k",
+        "user_profile": "https://i.pinimg.com/736x/f4/40/8a/f4408ae59bc76f809d049fcc92cbea80.jpg",
+        "product_img" : "https://down-th.img.susercontent.com/file/th-11134207-7r98q-lpwcdaksj9b8a2",
+        
+        "link_page":"/login/products/action/info3"
+    },
+    {
+        
+        "follow": "19k",
+        "name": "Bile",
+        "user_profile": "https://i.pinimg.com/564x/72/08/21/7208213e9425c1be6a9427d56dd68f56.jpg",
+        "product_img" : "https://cdn2.stylicy.com/global/image-5951-212761538-1-big-hr.jpg",
+       
+        "link_page":"/login/products/action/info2"
+    },
+    {
+        
+        "follow": "12k",
+        "name": "miw3123123",
+        "user_profile": "https://i.pinimg.com/564x/72/08/21/7208213e9425c1be6a9427d56dd68f56.jpg",
+        "product_price": "350",
+        "product_img" : "https://cf.shopee.co.th/file/9deeb10e8572c6e547ceaa1e63c10f4b",
+        
+
+        
+        "img1" : "https://cf.shopee.co.th/file/9deeb10e8572c6e547ceaa1e63c10f4b",
+        
+        "img2" : "https://cf.shopee.co.th/file/ea7369424b84df6094f486c23e2b0264",
+        
+        "img3" : "https://cf.shopee.co.th/file/060e6e6933ea8b0fbd077caee21b85c9",
+        
+        "img4" : "https://cf.shopee.co.th/file/8fe8b2bbdc1aaac9c004026e4b2fae9e",
+
+        "img5" : "https://cf.shopee.co.th/file/531c7a792bfdd16a6a1f08a6a995d6be",
+       
+        "link_page":"/login/products/action/info"
+    }
+    
+    
+    
+
+]

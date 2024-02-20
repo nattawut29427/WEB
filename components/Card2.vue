@@ -1,41 +1,41 @@
 <template>
-  <div id="body">
-    <div class="flex text-center items-start justify-start">
-      <h1 class="absolute text-3xl font-bold mt-[150px] ml-[360px]">
-        สินค้าล่าสุด
+  <div id="body w-fit">
+    <div class="flex text-center relative items-start justify-start">
+      <h1 class="absolute text-xl mt-[100px] ml-[50px] lg:text-3xl font-bold lg:mt-[150px] lg:ml-[360px]">
+        {{hname}}
       </h1>
     </div>
 
-    <div class="flex text-center gap-2 ml-10 mt-[250px] justify-center">
+    <div class=" grid grid-cols-2 ml-8 mr-4 gap-y-6 lg:flex text-center lg:gap-2 lg:ml-10 mt-[150px] lg:mt-[250px] justify-center">
       <div
         v-for="user2 in users2"
         :key="user2.id"
-        class="card jus card-compact w-[300px] bg-base-100 shadow-xl"
+        class="card jus card-compact w-[180px]  lg:w-[300px] bg-base-100 shadow-xl"
       >
         <NuxtLink :to="user2.link_page" target="_blank">
           <figure>
-            <nuxt-img class="h-[300px] w-fit" :src="user2.product_img" alt="" />
+            <nuxt-img class="h-[200px] lg:h-[320px] w-fit" :src="user2.product_img" alt="" />
           </figure>
         </NuxtLink>
-        <div class="card-body">
-          <h2 class="card-title font-bold">{{ user2.product_name }}</h2>
+        <div class=" lg:card-body p-3   h-[150px] lg:h-full">
+          <h2 class="card-title  font-bold">{{ user2.product_name }}</h2>
           <p class="text-start text-[18px] font-bold mb-4">
             {{ user2.product_price }}
           </p>
-          <div class="card-actions justify-between">
-            <div class="avatar">
+          <div class="card-actions  justify-between">
+            <div class="avatar hidden sm:block">
               <div class="w-11 bottom-1 rounded-full border-2 border-Light">
                 <nuxt-img :src="user2.user_profile" alt="" />
               </div>
             </div>
-            <div class="mr-7">
-              <p class="text-start font-bold">{{ user2.name }}</p>
-              <p class="mt-1 text-sm text-M_Gray">
+            <div class="mr-10 lg:mr-7">
+              <p class="text-start hidden sm:block font-bold">{{ user2.name }}</p>
+              <p class="mt-1 hidden sm:block text-sm text-M_Gray">
                 ผู้ติดตาม {{ user2.follow }}
               </p>
             </div>
             <button
-              class="btn bg-D_Blue rounded-lg hover:bg-Light w-[100px] text-[16px] font-thin text-white"
+              class="btn bg-D_Blue rounded-lg hover:bg-Light w-[150px] lg:w-[100px] text-[16px] font-thin text-white"
             >
               <img class="h-6 w-6" src="/pic/Send_light.png" />เเชท
             </button>
@@ -48,5 +48,24 @@
 
 <script setup>
 import userData from "/Data/DB_card2.json";
+import { ref } from "vue";
+
+
 const users2 = ref(userData);
+
+
+
+
+const props = defineProps({
+  hname: {
+    type: String,
+    default: "สินค้าล่าสุด",
+  },
+
+})
+
+
+
+
+
 </script>

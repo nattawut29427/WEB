@@ -48,7 +48,7 @@
             <ul class="w-[180px] rounded-none flex justify-center">
               <div>
                 <li>
-                  <a><img src="/pic/User_alt_fill.png" alt="" />หน้าโปรไฟล์</a>
+                  <a href="/login/profile"><img src="/pic/User_alt_fill.png" alt="" />หน้าโปรไฟล์</a>
                 </li>
                 <li>
                   <a><img src="/pic/Favorite (1).png" alt="" />รายการโปรด</a>
@@ -70,8 +70,8 @@
         </li>
       </ul>
     <div>
-    <!-- ค่อยเเก้ตอนมี back-end -->
-    <a href="order" class="btn w-[142px] rounded-3xl pr-6"><img src="/pic/Arhive_load_duotone_line.png" alt="" />ลงขาย</a>
+  
+    <a href="/login/form" class="btn w-[142px] rounded-3xl pr-6"><img src="/pic/Arhive_load_duotone_line.png" alt="" />ลงขาย</a>
   </div>
   </div>
 </div>

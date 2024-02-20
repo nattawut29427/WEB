@@ -127,6 +127,22 @@ onMounted(() => {
     const phone = document.getElementById('number_product');
 
     console.log(file.value)
+
+    file.addEventListener("change", e =>{
+      const fileinput = file.files[0];
+      const reader = new FileReader();
+
+      reader.addEventListener("load", () =>{
+        console.log(reader.result.split(',')[1])
+        console.log(fileinput.type)
+        console.log(fileinput.name)
+
+      })
+
+      reader.readAsDataURL(fileinput)
+    })
+
+    console.log(file.value)
     
     if(file.value !== ''){
       setSuccessFor(file)

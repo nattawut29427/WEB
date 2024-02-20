@@ -5,7 +5,10 @@
   >
     <div class="w-full flex h-[700px] mt-60 bg-C-white">
       <div class="w-[400px] mt-52 ml-20 h-[300px]">
-        <img src="/pic/image 12.png" alt="" class="m-auto mt-5" />
+        <div class="text-cyc text-center text-[40px] font-bold">
+            <h1>Secound UP</h1>
+          </div>
+        <img src="/pic/image 12.png" alt="" class="m-auto " />
       </div>
 
       <div class="w-[350px] relative h-[400px] m-auto">
@@ -150,7 +153,6 @@
                <div class="modal-action">
                   <form method="dialog">
                     <form action="/login">
-                    <!-- if there is a button in form, it will close the modal -->
                     <button class="btn">Close</button>
                   </form>
                   </form>

@@ -1,5 +1,5 @@
 <template>
-  <HeaderLogin />
+  <Header />
   <div class="w-[1200px] flex justify-between h-[1500px] m-auto mt[100px]">
     <div class="w-[200px] h-full">
       <div class="w-[180px] m-auto justify-center flex mt-[200px] h-[1100px]">
@@ -22,12 +22,12 @@
             <p class="font-medium">ช่วงราคา</p>
             <div class="form-control w-[200px] mt-4">
               <label class="label cursor-pointer w-full">
-                <input type="checkbox" class="checkbox" />
+                <input type="checkbox" class="checkbox" v-model="isCheckMax" v-on:change="getdata"/>
                 <span class="label-text mr-8">ราคาสูงสุด-ราคาต่ำสุด</span>
               </label>
               <label class="label cursor-pointer w-full">
-                <input type="checkbox" class="checkbox" />
-                <span class="label-text mr-8">ราคาต่ำสุด-ราคาสูงสุด</span>
+                <input type="checkbox" class="checkbox"  v-model="isCheckMin" v-on:change="getdata"/>
+                <span class="label-text mr-8"  >ราคาต่ำสุด-ราคาสูงสุด</span>
               </label>
             </div>
           </div>
@@ -84,8 +84,11 @@
 <!-- /////////////////////////////////////------------------- SCRIPT -------------///////////////////////////////////////////////////////////// -->
 
 <script>
+
 import userData from "/Data/DB_card2.json";
 import axios from 'axios'
+
+
 
 
 
@@ -94,6 +97,8 @@ export default {
   data() {
     return {
       datapros: {},
+      isCheckMax: false, //ให้ check box เป็น false เเล้วเราไปเช็คค่า checkbox ด้วย v-model เเล้วให้ v-onchange ใช้คำสั้ง getdata() เมื่อค่าเปลี่ยน 
+      isCheckMin: false,
     }
   },
   mounted() {
@@ -102,21 +107,39 @@ export default {
 
   },
   methods: {
-
+    
     getdata(){
-      axios.get('https://script.google.com/macros/s/AKfycbxMGpjiViX2CUy1cOCjhFM8ZNTrFZJLw958TNCRewAPGlza6pQU5V7Bi7_Be1nLPzwj4A/exec?action=getUsers').then(res =>{
-
-        this.datapros = res.data;
-      });
+      if (this.isCheckMax) { // ถ้าสถานะ เช็คบ๊อกเปลี่ยน ให้ใช้ฟังชั่นนี้
+        axios.get('https://script.google.com/macros/s/AKfycbxMGpjiViX2CUy1cOCjhFM8ZNTrFZJLw958TNCRewAPGlza6pQU5V7Bi7_Be1nLPzwj4A/exec?action=getUsers').then(res =>{
+          this.datapros = res.data;
+          this.datapros.sort((a, b) => b.price - a.price);
+          console.log(this.datapros)
+        });
+      
+      } else if(this.isCheckMin){
+        axios.get('https://script.google.com/macros/s/AKfycbxMGpjiViX2CUy1cOCjhFM8ZNTrFZJLw958TNCRewAPGlza6pQU5V7Bi7_Be1nLPzwj4A/exec?action=getUsers').then(res =>{
+          this.datapros = res.data;
+          this.datapros.sort((a, b) => a.price - b.price);
+          console.log(this.datapros)
+        });
+      
+      }else { // ไม่มีอะไรเกิดขึ้นก็ให้ ดึง api มาปกติ
+        axios.get('https://script.google.com/macros/s/AKfycbxMGpjiViX2CUy1cOCjhFM8ZNTrFZJLw958TNCRewAPGlza6pQU5V7Bi7_Be1nLPzwj4A/exec?action=getUsers').then(res =>{
+          this.datapros = res.data;
+        
+        });
+      }
     }
   }
-
-
 }
 
 
 
-const users2 = ref(userData);
+
+
+
+
+
 
 
 </script>

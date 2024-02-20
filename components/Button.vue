@@ -1,15 +1,15 @@
 <template>
-  <div class="w-fit grid ml-9 lg:w-full lg:flex lg:ml-3 justify-center">
-    <a href="/products"><button
-      class="btn bg-gradient-to-r w-[360px] text-xl h-16 from-blue to-cyc mt-10 mr-1 lg:h-[137px] text-white lg:w-[600px] lg:text-[32px]"
+  <div class="w-[350px] grid grid-cols-2 ml-9 lg:w-full lg:flex lg:ml-3 justify-center">
+    <a href="/traveler/products"><button
+      class="btn bg-gradient-to-r w-full text-fit h-20 from-blue to-cyc mt-10 mr-1 lg:h-[137px] text-white lg:w-[600px] lg:text-[32px]"
     >
-      <img class="mr-14 "  src="/pic/Outline.png" alt="" />เสื้อผ้ารองเท้า
+      <img class="mr-14 hidden sm:block "  src="/pic/Outline.png" alt="" />เสื้อผ้ารองเท้า
     </button></a>
-    <button
-      class="btn bg-gradient-to-r w-[360px] h-16 text-xl from-blue to-cyc lg:mt-10 lg:h-[137px] text-white lg:text-[32px] lg:w-[600px]"
+    <a href="/traveler/products/action"><button
+      class="btn bg-gradient-to-r w-full mt-10 h-20 text-fit from-blue to-cyc lg:mt-10 lg:h-[137px] text-white lg:text-[32px] lg:w-[600px]"
     >
-      <img class="mr-14 " src="/pic/Union.png" alt="" />สินค้าประมูล
-    </button>
+      <img class="mr-14 hidden sm:block" src="/pic/Union.png" alt="" />สินค้าประมูล
+    </button></a>
   </div>
 </template>
 <!-- <template>
@@ -18,3 +18,4 @@
     <button class="btn bg-gradient-to-r from-blue to-cyc mt-10 h-[137px]  text-white text-[32px]  w-[600px]">สินค้าประมูล</button>
   </div>
 </template> -->
+

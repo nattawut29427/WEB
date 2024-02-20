@@ -1,7 +1,7 @@
 <template>
-  <div class="grid   lg:flex items-center justify-center mt-[200px]">
+  <div class="grid mt-10 mr-3 gap-y-7   lg:flex items-center justify-center lg:mt-[200px]">
     <div
-      class="card rounded-[24px] ml-7 h-80 lg:w-[390px] lg:h-[400px] text-white bg-l_Gray shadow-xl"
+      class="card rounded-[24px] w-[290px] ml-7 h-80 lg:w-[390px] lg:h-[400px] text-white bg-l_Gray shadow-xl"
       v-for="user in users" :key="user.id">
       <div class="card-body p-[12px] rounded-t-[24px]  bg-D_Black">
         <div class="flex justify-between">
@@ -19,24 +19,24 @@
             </div>
           </div>
           <div
-            class="flex justify-center items-center text-xl font-bold text-center"
+            class="flex justify-center items-center lg:text-xl font-bold text-center"
           >
-            <div class="mr-2 w-[35px] h-[35px] rounded-lg r bg-T-gray">
-              <p class="pt-[3px]" id="Htime">{{ hours }}</p>
+            <div class="mr-2 w-[25px] h-[25px] rounded-lg lg:w-[35px] lg:h-[35px]  r bg-T-gray">
+              <p class="lg:pt-[3px]" id="Htime">{{ hours }}</p>
             </div>
-            <div class="mr-2 w-[35px] h-[35px] rounded-lg bg-T-gray">
-              <p class="pt-[3px] Mtime">{{ min }}</p>
+            <div class="mr-2 w-[25px] h-[25px]   lg:w-[35px] lg:h-[35px] rounded-lg bg-T-gray">
+              <p class="lg:pt-[3px] Mtime">{{ min }}</p>
             </div>
-            <div class="mr-3 w-[35px] h-[35px] rounded-lg bg-T-gray">
-              <p class="pt-[3px]" id="Mtime">{{ sec }}</p>
+            <div class="mr-3 w-[25px] h-[25px] lg:w-[35px] lg:h-[35px]  rounded-lg bg-T-gray">
+              <p class="lg:pt-[3px]" id="Mtime">{{ sec }}</p>
             </div>
           </div>
         </div>
       </div>
-      <figure>
-        <nuxt-img class="h-[320px] w-auto" :src="user.product_img" alt="" /> 
-        <button
-          class="btn bg-D_Black border-0 font-thin text-[16px]  text-white absolute w-[130px] text-center hover:bg-T-gray lg:ml-[250px] lg:mt-[250px] rounded-3xl h-[45px]"
+      <figure class="relative">
+        <nuxt-img class="h-[300px] lg:h-[320px] w-auto" :src="user.product_img" alt="" /> 
+        <a></a><button
+          class="btn bg-D_Black border-0 font-thin text-[16px]  text-white absolute w-[130px] bottom-0 right-3 mb-2 text-center hover:bg-T-gray lg:ml-[250px] lg:mt-[250px] rounded-3xl h-[45px]"
         >
              เข้าร่วมประมูล
         </button>
@@ -57,6 +57,10 @@ const props = defineProps({
     type: String,
     default: "",
   },
+  hname: {
+    type: String,
+    default: "",
+  },
   new_img: {
     type: String,
     default: "",
@@ -64,7 +68,7 @@ const props = defineProps({
 });
 
 
-const new_img = ref('');
+
 
 const hours = ref(0);
 const min = ref(0);

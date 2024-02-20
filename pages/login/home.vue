@@ -1,29 +1,27 @@
 <template>
-  <div class="w-[430px] lg:w-full">
-
-
-  <Header />
+  <HeaderLogin />
   <Banner/>
-  <div class="w-fit lg:w-full">
-    <Button/>
+  <div class="ml-3">
+    <Button_login/>
   </div>
-   <div class="flex mt-10 ml-10 relative w-[50] text-center lg:">
-    <h1 class="absolute  text-xl font-bold lg:text-3xl lg:mt-[120px] lg:ml-[320px] ">
+   <div class="flex text-center items-start justify-start">
+    <h1 class="absolute text-3xl font-bold mt-[120px] ml-[360px]">
       สินค้าประมูล
     </h1>
   </div> 
-   <div class="" >
-    <Card  :endtime="'21 February 2024'"/>
+   <div class="ml-9" >
+    <Card  :endtime="endtime"/>
   </div>
-  <div class="lg:ml-4">
+  <div class="ml-4">
     <Card2 :hname="'สินค้าล่าสุด'"/>  
   </div>
-</div>
+    
 </template> 
 
 <script setup>
 import { ref } from "vue";
 import userData from "/Data/DB_card.json";
+import Button_login from "~/components/Button_login.vue";
 
 const users = ref(userData);
 

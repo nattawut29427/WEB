@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer  w-fit mt-[400px] lg:p-10 lg:w-full  bg-gradient-to-r from-blue to-cyc text-base-content">
+  <footer class="footer  w-full mt-[400px] lg:p-10 lg:w-full  bg-gradient-to-r from-blue to-cyc text-base-content">
   <nav class="ml-[350px]   text-white">
     <h6 class="footer-title">เกี่ยวกับเรา</h6> 
     <a class="link link-hover">Branding</a>

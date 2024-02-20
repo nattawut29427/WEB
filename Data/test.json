@@ -1,7 +1,14 @@
 [
     {
-        "name": "ชื่อของสินค้า",
-        "price": 100,
-        "description": "รายระเอียดของสินค้า"
+
+        "pic": "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDFyb3poZzJ5MDdjYjg2ajhsbjNuNTI0dGs5cHd0dmFuczUxaWp4ciZlcD12MV92aWRlb3Nfc2VhcmNoJmN0PXY/iqU07uixfQCjzr9aEd/200w.webp"
+    },
+    {
+
+        "pic": "https://i.pinimg.com/736x/a2/f4/2e/a2f42eae6dca75db12d8f7acc96fefd2.jpg"
+    },
+    {
+
+        "pic": "https://media4.giphy.com/media/lnq52t8atIw3m/200w.webp?cid=ecf05e471mut382v8gbdf9ycv0u6zr1i2tfpvzokn20oa5r6&ep=v1_gifs_related&rid=200w.webp&ct=g"
     }
 ]

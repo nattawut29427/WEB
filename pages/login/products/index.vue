@@ -41,18 +41,20 @@
             :key="index"
             class="card jus card-compact w-[300px] h-fit bg-base-100 shadow-xl"
           >
-            <NuxtLink :to="datapro.link_page" target="_blank">
+            <NuxtLink :to="datapro.db_type">
               <figure>
                 <nuxt-img
-                  class="h-[300px] w-fit"
+                  class="h-[300px] w-fit cursor-pointer"
                   :src="datapro.pic"
                   alt=""
                 />
               </figure>
             </NuxtLink>
+            <div class="cursor-pointer">
+            <NuxtLink :to="datapro.db_type" target="_blank">
             <div class="card-body">
-              <h2 class="card-title font-bold">{{ datapro.name_product }}</h2>
-              <p class="text-start text-[18px] font-bold ">
+              <h2 class="card-title font-bold  text-[16px] ">{{ datapro.name_product }}</h2>
+              <p class="text-start text-[18px]  font-bold ">
                 ฿{{ datapro.price }}
               </p>
 
@@ -75,6 +77,8 @@
                 </button>
               </div>
             </div>
+          </NuxtLink>
+        </div>
           </div>
         </div>
       </div>

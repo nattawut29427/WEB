@@ -27,23 +27,23 @@
         <li><a>Item 3</a></li>
       </ul>
     </div>
-    <a class="btn btn-ghost text-[32px] font-bold text-white ml-[2] lg:ml-0" href="http://localhost:3000/">Second UP</a>
+    <a class="btn btn-ghost text-[32px] font-bold text-white ml-[2] lg:ml-0" href="/login/home">Second UP</a>
   </div>
   <div class="navbar-end hidden mr-[262px] mt-10 lg:flex">
     <ul class="menu menu-horizontal px-2">
         <div class="flex mt-2">
           <li><img src="/pic/Favorite.png" alt="" /></li>
-          <li><img src="/pic/Bag.png" alt="" /></li>
+          <a href="/login/cart"><li><img src="/pic/Bag.png" alt="" /></li></a>
         </div>
         <li>
           <details>
             <summary class="text-white p-3 mr-1 ">
               <div class="avatar">
               <div class="w-11 bottom-1 rounded-full border-2 border-Light">
-                <img src="/pic/f14f031d1ca1daf1b764cc300e4d39ee.jpg" alt="">
+                <img src="https://shorturl.asia/FJLq6" alt="">
               </div>
             </div>
-            นัฐวุฒ อินทรพาณิชย์
+            ออยเอง
             </summary>
             <ul class="w-[180px] rounded-none flex justify-center">
               <div>
@@ -57,7 +57,7 @@
                   <a><img src="/pic/Info.png" alt="" />ช่วยเหลือ</a>
                 </li>
                 <li>
-                  <a
+                  <a href="http://localhost:3000/"
                     ><img
                       src="/pic/Sign_in_squre_fill.png"
                       alt=""

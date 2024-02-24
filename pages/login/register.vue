@@ -309,8 +309,15 @@ onMounted(() => {
       }
 
 
-      if (emailKey  !== "" ) {
+      if (emailKey  !== "" && /[ก-๙]/.test(emailKey) ) {
+        setErrorFor(regist_email,'โปรดใส่ภาษาอังกฤษ');
+      
+      } else if (emailKey !== "" && !/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/.test(emailKey)) {
+        setErrorFor(regist_email, 'รูปแบบอีเมลไม่ถูกต้อง');
+
+      } else if (emailKey !== "" && /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/.test(emailKey)) {
         setSuccessFor(regist_email);
+
       } else {
         setDelFor(regist_email);
       }

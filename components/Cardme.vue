@@ -6,7 +6,7 @@
       </h1>
     </div>
 
-    <div class=" grid grid-cols-2 ml-8 mr-4 gap-y-6 lg:flex text-center lg:gap-2 lg:ml-10 mt-[150px] lg:mt-[250px] justify-center">
+    <div class=" grid grid-cols-2 ml-8 mr-4 gap-y-6 lg:flex  text-center lg:gap-2 lg:-scroll lg:ml-96 mt-[150px] lg:mt-[250px] justify-start">
       <div
         v-for="user2 in users2"
         :key="user2.id"
@@ -34,7 +34,7 @@
                 ผู้ติดตาม {{ user2.follow }}
               </p>
             </div>
-            <Buttoncalll/>
+            <B_edit/>
           </div>
         </div>
       </div>
@@ -43,7 +43,7 @@
 </template>
 
 <script setup>
-import userData from "/Data/DB_card2.json";
+import userData from "/Data/DB_me.json";
 import { ref } from "vue";
 
 

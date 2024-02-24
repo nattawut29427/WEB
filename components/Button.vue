@@ -1,14 +1,14 @@
 <template>
   <div class="w-[350px] grid grid-cols-2 ml-9 lg:w-full lg:flex lg:ml-3 justify-center">
     <a href="/traveler/products"><button
-      class="btn bg-gradient-to-r w-full text-fit h-20 from-blue to-cyc mt-10 mr-1 lg:h-[137px] text-white lg:w-[600px] lg:text-[32px]"
+      class="btn bg-gradient-to-r w-full text-[16px] h-20 from-blue to-cyc mt-10 mr-1 lg:h-[137px] text-white lg:w-[600px] lg:text-[32px]"
     >
-      <img class="mr-14 hidden sm:block "  src="/pic/Outline.png" alt="" />เสื้อผ้ารองเท้า
+      <img class="mr-14 hidden sm:block "  src="/pic/Outline.png" alt="" />รายการขาย
     </button></a>
     <a href="/traveler/products/action"><button
-      class="btn bg-gradient-to-r w-full mt-10 h-20 text-fit from-blue to-cyc lg:mt-10 lg:h-[137px] text-white lg:text-[32px] lg:w-[600px]"
+      class="btn bg-gradient-to-r w-full mt-10 h-20 text-[13px] from-blue to-cyc lg:mt-10 lg:h-[137px] text-white lg:text-[32px] lg:w-[600px]"
     >
-      <img class="mr-14 hidden sm:block" src="/pic/Union.png" alt="" />สินค้าประมูล
+      <img class="mr-14 hidden sm:block" src="/pic/Union.png" alt="" />รายการสินค้าประมูล
     </button></a>
   </div>
 </template>

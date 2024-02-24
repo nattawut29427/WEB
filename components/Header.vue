@@ -52,8 +52,8 @@
     <div class="navbar-end hidden  mr-[262px] mt-12 lg:flex">
       <ul class="menu menu-horizontal flex px-2">
         <div class="flex">
-          <li><img src="/pic/Favorite.png" alt="" /></li>
-          <li><img src="/pic/Bag.png" alt="" /></li>
+          <button onclick="my_modal_5.showModal()"><li><img src="/pic/Favorite.png" alt="" /></li></button>
+          <button onclick="my_modal_5.showModal()"><li><img src="/pic/Bag.png" alt="" /></li></button>
         </div>
         
 
@@ -75,7 +75,7 @@
         <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
           <div class="modal-box">
             <h3 class="font-bold text-lg">โปรดเข้าสู่ระบบก่อน</h3>
-            <p class="py-4">Press ESC key or click the button below to close</p>
+            <p class="py-4">โปรดเข้าสู่ระบบก่อน จึงจะสามาถารใช้งานฟีเจอร์นี้ได้</p>
             <div class="modal-action">
               <form method="dialog" class="flex">
                 <form action="/login">

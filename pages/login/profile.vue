@@ -9,17 +9,17 @@
   <div class="flex justify-between">
     <div class="ml-[262px] flex items-center">
       <img
-        src="/pic/f14f031d1ca1daf1b764cc300e4d39ee.jpg"
+        src="https://shorturl.asia/FJLq6"
         class="rounded-full w-[250px] h-[250px] mt-[-100px] border-[15px] border-white"
       />
       <div class="">
         <div class="text-3xl text-pink-800 font-bold ml-[20px] flex">
-          Listkung
+          ออยเอง
           <img src="/pic/Edit_light (1).png" class="w-7 h-7 mt-2 ml-2" />
         </div>
         <div class="ml-4 mt-2 flex">
           <img src="/pic/Group_add_light.png" class="w-7 h-7" />
-          <div class="ml-2">ผู้ติดตาม 100K</div>
+          <div class="ml-2">ผู้ติดตาม 12K</div>
         </div>
       </div>
     </div>
@@ -97,7 +97,7 @@
       
     </div>
   </div>
-  <Card2 :hname="'สินค้าของฉัน'" class="m-0"/>
+  <Cardme :hname="'สินค้าของฉัน'" class="m-0"/>
 </template>
 
 

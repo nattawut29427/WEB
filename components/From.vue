@@ -2,7 +2,7 @@
   <div class="w-[1000px] flex h-[1500px] m-auto mt[100px]">
     <div class="m-auto w-full h-[1000px] items-center">
       <div class="text-[36px] font-bold text-M_Blue">
-        <h2>ลงสินค้า</h2>
+        <h2>{{ name }}</h2>
       </div>
       <form class="mx-20 mt-20 form" id="form">
         
@@ -99,7 +99,7 @@
           <button 
             class="btn bg-Light text-white text-[42px] w-[200px] rounded-full ml-5 btn-xs hover:bg-D_Blue sm:btn-sm md:btn-md lg:btn-lg"
           >
-            โพสต์เลย
+            {{ send }}
           </button>
         </div>     
       </form>
@@ -113,8 +113,19 @@
 
 
 <script setup>
+import {ref} from 'vue'
 
+const props = defineProps({
+  name: {
+    type: String,
+    default: "ลงสินค้า",
+  },
+  send: {
+    type: String,
+    default: "โพสต์เลย",
+  },
 
+})
 
 onMounted(() => {
  if (process.client) {

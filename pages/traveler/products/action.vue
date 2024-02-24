@@ -36,7 +36,7 @@
     </div>
     <div class="w-[950px] h-full">
       <div class="w-full grid grid-cols-2 pl-10 gap-y-10  h-[500px] mt-[200px]">
-       <Cardaction :endtime="'19 February 2024'"/>
+       <Cardaction :endtime="'25 February 2024'"/>
     </div>
   </div>
 </div>

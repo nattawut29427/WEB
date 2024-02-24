@@ -4,7 +4,7 @@
 
   <Header />
   <Banner/>
-  <div class="w-fit lg:w-full">
+  <div class="w-fit ml-3 lg:w-full">
     <Button/>
   </div>
    <div class="flex mt-10 ml-10 relative w-[50] text-center lg:">
@@ -13,7 +13,7 @@
     </h1>
   </div> 
    <div class="" >
-    <Card  :endtime="'21 February 2024'"/>
+    <Card  :endtime="'25 February 2024'"/>
   </div>
   <div class="lg:ml-4">
     <Card2 :hname="'สินค้าล่าสุด'"/>  

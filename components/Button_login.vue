@@ -3,12 +3,12 @@
     <a href="/login/products"><button
       class="btn bg-gradient-to-r w-[360px] text-xl h-16 from-blue to-cyc mt-10 mr-1 lg:h-[137px] text-white lg:w-[600px] lg:text-[32px]"
     >
-      <img class="mr-14 "  src="/pic/Outline.png" alt="" />เสื้อผ้ารองเท้า
+      <img class="mr-14 "  src="/pic/Outline.png" alt="" />รายการขาย
     </button></a>
     <a href="/login/products/action"><button
       class="btn bg-gradient-to-r w-[360px] h-16 text-xl from-blue to-cyc lg:mt-10 lg:h-[137px] text-white lg:text-[32px] lg:w-[600px]"
     >
-      <img class="mr-14 " src="/pic/Union.png" alt="" />สินค้าประมูล
+      <img class="mr-14 " src="/pic/Union.png" alt="" />รายการสินค้าประมูล
     </button></a>
   </div>
 </template>

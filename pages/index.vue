@@ -13,7 +13,7 @@
     </h1>
   </div> 
    <div class="" >
-    <Card  :endtime="'25 February 2024'"/>
+    <Card  :endtime="'2 March 2024'"/>
   </div>
   <div class="lg:ml-4">
     <Card2nore :hname="'สินค้าล่าสุด'"/>  

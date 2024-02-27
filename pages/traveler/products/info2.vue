@@ -6,24 +6,24 @@
             <div class="nav flex  justify-between">
                 <div class="navv flex w-[500px] pl-2 ">
                     <div class="image-container flex justify-center items-center h-full  ">
-                        <NuxtImg class="img max-w-full max-h-full object-contain" :src="infos[0].img1"/>
+                        <NuxtImg class="img max-w-full max-h-full object-contain" :src="infos[1].img1"/>
                     </div>
                     <div class="imge w-[125px] p-5 flex flex-wrap gap-5 ">
-                        <nuxtImg  class="w-full" :src="infos[0].img2" alt="" />
-                        <nuxtImg  class="w-full" :src="infos[0].img3" alt="" />
-                        <nuxtImg  class="w-full"  :src="infos[0].img4" alt="" />
-                        <nuxtImg  class="w-full" :src="infos[0].img5" alt="" />
+                        <nuxtImg  class="w-full" :src="infos[1].img2" alt="" />
+                        <nuxtImg  class="w-full" :src="infos[1].img3" alt="" />
+                        <nuxtImg  class="w-full"  :src="infos[1].img4" alt="" />
+                        <nuxtImg  class="w-full" :src="infos[1].img5" alt="" />
                         
                     </div>
                 </div>
                 <div class="navvv pr-2 pt-10">
-                    <h3 class="h3 text-xl text-M_Blue font-bold">{{ infos[0].product_name }}</h3>
+                    <h3 class="h3 text-xl text-M_Blue font-bold">{{ infos[1].product_name }}</h3>
                     <a>จำนวนผู้ประมูล 2 คน</a>
                     <br><br>
                     
                     <div class="flex justify-between text-2xl font-bold">
                         <h2>ราคาตอนนี้</h2>
-                        <h2><span class="text-M_Blue">{{ infos[0].product_price }}</span> <span class="text-red-500">บาท</span></h2><br>
+                        <h2><span class="text-M_Blue">{{ infos[1].product_price }}</span> <span class="text-red-500">บาท</span></h2><br>
                     </div>
                     <br>
                     <span class=".">ผู้ประมูลล่าสุด</span> <span class="text-M_Blue">List_re</span>
@@ -42,11 +42,11 @@
         <div class=" flex">
             <div class="hero w-[50%] h-32 br-5 rounded-2xl flex bg-gradient-to-r from-blue to-cyc   ">
                 <div class="justify-start pl-3 ">
-                    <nuxt-img class="w-16 h-16 rounded-full" :src="infos[0].user_profile" alt="" />
+                    <nuxt-img class="w-16 h-16 rounded-full" :src="infos[1].user_profile" alt="" />
                 </div>
                 <div class="flex-col text-white pl-3">
                     <p>{{ infos[1].name }}</p>
-                    <p>ผู้ติดตาม {{ infos[0].follow }}</p>
+                    <p>ผู้ติดตาม {{ infos[1].follow }}</p>
                 </div>
                 <div class="vv pl-32  ">
                     <div class=" ml-3 w-full flex ">

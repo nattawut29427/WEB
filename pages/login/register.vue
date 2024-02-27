@@ -146,9 +146,9 @@
             </button>
             <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
               <div class="modal-box">
-                <h3 class="font-bold text-lg">ทำการสมัครบัญชีเรียบร้อย</h3>
+                <h3 class="font-bold text-lg">สมัครบัญชีเรียบร้อย</h3>
                 <p class="py-4">
-                  Press ESC key or click the button below to close
+                  ไปหน้า login เพื่อเข้าสู่ระบบ
                 </p>
                <div class="modal-action">
                   <form method="dialog">
@@ -159,7 +159,7 @@
                 </div>
               </div>
             </dialog>
-            <form action="">
+            <form action="/login">
             <button
               class="btn w-[150px] btn-xs bg-white border-2 rounded-full sm:btn-sm md:btn-md"
             >

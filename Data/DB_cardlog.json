@@ -6,7 +6,7 @@
         "user_profile": "https://i.pinimg.com/564x/f5/65/e2/f565e2609ba34ba6c24d9d21e0021b88.jpg",
         "product_img" : "https://media.karousell.com/media/photos/products/2023/1/18/nike_sb_dunk_low_jpack_shadow_1674067000_78ccd87e_progressive.jpg",
         "Time":"21 February 2024",
-        "link_page":"/traveler/products/info1"
+        "link_page":"/login/products/action/info1"
     },
     {
         "id":2,
@@ -15,7 +15,7 @@
         "user_profile": "https://i.pinimg.com/736x/f4/40/8a/f4408ae59bc76f809d049fcc92cbea80.jpg",
         "product_img" : "https://down-th.img.susercontent.com/file/th-11134207-7r98q-lpwcdaksj9b8a2",
         "Time":"14 February 2024",
-        "link_page":"/traveler/products/info2"
+        "link_page":"/login/products/action/info2"
     },
     {
         "id":3,
@@ -24,7 +24,7 @@
         "user_profile": "https://i.pinimg.com/564x/72/08/21/7208213e9425c1be6a9427d56dd68f56.jpg",
         "product_img" : "https://cdn2.stylicy.com/global/image-5951-212761538-1-big-hr.jpg",
         "Time":"12 February 2024",
-        "link_page":"/traveler/products/info3"
+        "link_page":"/login/products/action/info3"
     }
     
 

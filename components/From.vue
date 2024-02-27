@@ -73,7 +73,8 @@
           />
           <i class="text-C-green check-s"><Icon name="i-ion-checkmark-circled" /></i>
           <i class="text-Red check-e"><Icon name="i-ion-close-circled" /></i>
-          <small>Error message</small>
+          <small class="right-[950px]">Error message</small>
+          
         </div>
 
         <div  class="mt-[40px] form-edit flex justify-between">
@@ -250,7 +251,7 @@ onMounted(() => {
         // show error
         // add error class
         
-        setErrorFor(phone, 'โปรดใส่เบอร์โทรศัพท์');
+        setErrorFor(phone, 'โปรดใส่เบอร์มือถือ');
       
       } else{
         
@@ -333,7 +334,7 @@ onMounted(() => {
       if(phoneKey !== '' && phoneKey.length === 10){
         setSuccessFor(phone);
       } else if (phoneKey.length > 9) {
-        setErrorFor(phone, 'เบอร์เกิน10');
+        setErrorFor(phone, 'เบอร์เกิน 10 ตัว');
       } else {
         setDelFor(phone);
       }

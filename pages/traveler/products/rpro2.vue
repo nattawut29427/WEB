@@ -1,6 +1,6 @@
 <template>
-    <HeaderLogin />
-    <Breadcrumblog/>
+    <Header/>
+    <Breadcrumbre/>
     <div class="container max-w-[1000px] m-auto bg-neutral-100 ">
         <nav>
             <div class="nav flex  justify-between">

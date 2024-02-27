@@ -152,7 +152,7 @@
                 </p>
                <div class="modal-action">
                   <form method="dialog">
-                    <form action="/login">
+                    <form action="">
                     <button class="btn">Close</button>
                   </form>
                   </form>

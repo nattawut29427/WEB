@@ -1,5 +1,5 @@
 <template>
-  <Header />
+  <Header/>
   <div class="w-[1200px] flex justify-between h-[1500px] m-auto mt[100px]">
     <div class="w-[200px] h-full">
       <div class="w-[180px] m-auto justify-center flex mt-[200px] h-[1100px]">
@@ -36,7 +36,7 @@
     </div>
     <div class="w-[950px] h-full">
       <div class="w-full grid grid-cols-2 pl-10 gap-y-10  h-[500px] mt-[200px]">
-       <Cardaction :endtime="'25 February 2024'"/>
+       <Cardactionnore :endtime="'27 February 2024'"/>
     </div>
   </div>
 </div>

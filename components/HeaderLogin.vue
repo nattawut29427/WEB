@@ -32,7 +32,7 @@
   <div class="navbar-end hidden mr-[262px] mt-10 lg:flex">
     <ul class="menu menu-horizontal px-2">
         <div class="flex mt-2">
-          <li><img src="/pic/Favorite.png" alt="" /></li>
+          <a href="/login/like"><li><img src="/pic/Favorite.png" alt="" /></li></a>
           <a href="/login/cart"><li><img src="/pic/Bag.png" alt="" /></li></a>
         </div>
         <li>
@@ -40,7 +40,7 @@
             <summary class="text-white p-3 mr-1 ">
               <div class="avatar">
               <div class="w-11 bottom-1 rounded-full border-2 border-Light">
-                <img src="https://shorturl.asia/FJLq6" alt="">
+                <img src="https://i.pinimg.com/564x/1c/56/d1/1c56d1e6e3f002f4109a1f59e56cf292.jpg" alt="">
               </div>
             </div>
             ออยเอง
@@ -51,7 +51,7 @@
                   <a href="/login/profile"><img src="/pic/User_alt_fill.png" alt="" />หน้าโปรไฟล์</a>
                 </li>
                 <li>
-                  <a><img src="/pic/Favorite (1).png" alt="" />รายการโปรด</a>
+                  <a href="/login/like"><img src="/pic/Favorite (1).png" alt="" />รายการโปรด</a>
                 </li>
                 <li>
                   <a><img src="/pic/Info.png" alt="" />ช่วยเหลือ</a>
@@ -77,33 +77,3 @@
 </div>
 </template>
 
-<script>
-
-import axios from 'axios'
-
-export default {
-  name: "datapro",
-  data() {
-    return {
-      datapros: {},
-    }
-  },
-  mounted() {
-
-    this.getdata();
-
-  },
-  methods: {
-
-    getdata(){
-      axios.get('https://script.google.com/macros/s/AKfycbz2zMtIo3gI_J4gWVWtTdRMpc5-o1LmvXBWcNoh9pkNRgS7A9giQYwwUDb5-9G3yI3LRQ/exec?action=getUsers').then(res =>{
-
-        this.datapros = res.data;
-      });
-    }
-  }
-
-
-}
-
-</script>

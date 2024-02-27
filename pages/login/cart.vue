@@ -17,7 +17,7 @@
                 </div>
               </div>
               <div style="margin-top: 55px;"> <!-- Adjusted margin-top -->
-                <h1 class="font-semibold h-0 mb-0 lg:mb-0">Seller M</h1>
+                <h1 class="font-semibold h-0 mb-0 lg:mb-0">User</h1>
               </div>
             </div>
             <div class="h-10 w-10 mb-4 lg:mb-0 mr-4"></div>
@@ -53,12 +53,9 @@ export default {
   data() {
     return {
       items: [
-        { name: 'Product 1', price: 100, image: 'https://d2cva83hdk3bwc.cloudfront.net/nike-x-stussy-the-wide-world-tribe-t-shirt--asia-sizing--white-1.jpg', selected: false },
-        { name: 'Product 2', price: 150, image: 'https://cdn-icons-png.flaticon.com/512/1413/1413908.png', selected: false },
-        { name: 'Product 3', price: 80, image: 'https://cdn-icons-png.flaticon.com/512/1413/1413908.png', selected: false },
-        { name: 'Product 4', price: 120, image: 'https://cdn-icons-png.flaticon.com/512/1413/1413908.png', selected: false },
-        { name: 'Product 5', price: 200, image: 'https://cdn-icons-png.flaticon.com/512/1413/1413908.png', selected: false },
-        { name: 'Product 6', price: 90, image: 'https://cdn-icons-png.flaticon.com/512/1413/1413908.png', selected: false }
+        { name: 'เสื้อ opv การตูน', price: 250, image: 'https://down-th.img.susercontent.com/file/sg-11134201-7qvdu-ljky7jwz97lj9a', selected: false },
+        { name: 'Vans Old Skool PRO™', price: 900, image: 'https://scontent.fbkk4-5.fna.fbcdn.net/v/t39.30808-6/421466712_391017450136289_7230423663838000432_n.jpg?stp=cp6_dst-jpg&_nc_cat=101&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeHgUstnqTwpeHptBPaZBDkzLbP443Qq9lAts_jjdCr2UGczxRtbznFNXsLzDjBB6WWm2jfaqcwJOJgJk_1cMfs-&_nc_ohc=z_mgCgblJ6kAX8HeNF9&_nc_zt=23&_nc_ht=scontent.fbkk4-5.fna&oh=00_AfDHmeqYVxBggtShTa7CdhPAlDVamsbza-uKTzuxyrlKgw&oe=65E1EA48', selected: false },
+        { name: 'เสื้อ สาขา SE .ใส่ไม่กี่ครั้ง', price: 80, image: 'https://down-th.img.susercontent.com/file/sg-11134201-7rbkj-lm50tin1o97tfa', selected: false }   
       ],
       selectAll: false
     };

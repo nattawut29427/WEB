@@ -9,7 +9,7 @@
   <div class="flex justify-between">
     <div class="ml-[262px] flex items-center">
       <img
-        src="https://shorturl.asia/FJLq6"
+        src="https://i.pinimg.com/564x/1c/56/d1/1c56d1e6e3f002f4109a1f59e56cf292.jpg"
         class="rounded-full w-[250px] h-[250px] mt-[-100px] border-[15px] border-white"
       />
       <div class="">

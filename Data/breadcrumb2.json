@@ -1,0 +1,7 @@
+
+[
+    { "name": "หน้าแรก", "link": "http://localhost:3000/" },
+    { "name": "หน้าสินค้าประมูล", "link": "/traveler/products/action" },
+    { "name": "รายละเอียดสินค้า"}
+  ]
+  

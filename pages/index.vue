@@ -16,7 +16,7 @@
     <Card  :endtime="'25 February 2024'"/>
   </div>
   <div class="lg:ml-4">
-    <Card2 :hname="'สินค้าล่าสุด'"/>  
+    <Card2nore :hname="'สินค้าล่าสุด'"/>  
   </div>
 </div>
 </template> 

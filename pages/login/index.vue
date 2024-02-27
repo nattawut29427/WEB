@@ -1,8 +1,5 @@
 
 
-
-
-
 <template>
     <Headernull />
     <div
@@ -87,7 +84,7 @@
           <div class="flex justify-center items-center gap-5 mt-4">
             <button
               class="btn w-[150px] btn-xs bg-white border-2 rounded-full sm:btn-sm md:btn-md"
-              onclick="window.location.href='https://accounts.google.com/login'"
+              onclick="window.location.href='https://accounts.google.com/login"
             >
               <img src="/pic/image 11.png" alt="" class="" />
               Google

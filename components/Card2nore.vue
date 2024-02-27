@@ -12,7 +12,7 @@
         :key="user2.id"
         class="card jus card-compact w-[180px]  lg:w-[300px] bg-base-100 shadow-xl"
       >
-         <NuxtLink :to="user2.link_page" target="_blank">
+        <NuxtLink :to="user2.link_page" target="_blank">
           <figure>
             <nuxt-img class="h-[200px] lg:h-[320px] w-fit" :src="user2.product_img" alt="" />
           </figure>
@@ -43,7 +43,7 @@
 </template>
 
 <script setup>
-import userData from "/Data/DB_card2.json";
+import userData from "/Data/DB_card2nore.json";
 import { ref } from "vue";
 
 

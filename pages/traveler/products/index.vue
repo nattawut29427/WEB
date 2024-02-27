@@ -41,7 +41,7 @@
             :key="index"
             class="card jus card-compact w-[300px] h-fit bg-base-100 shadow-xl"
           >
-            <NuxtLink :to="datapro.db_type">
+            <NuxtLink :to="datapro.info_product">
               <figure>
                 <nuxt-img
                   class="h-[300px] w-fit"

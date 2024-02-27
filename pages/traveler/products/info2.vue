@@ -1,6 +1,6 @@
 <template>
-    <HeaderLogin />
-    <Breadcrumb/>
+    <Header />
+    <Breadcrumb2/>
     <div class="container max-w-[1000px] m-auto bg-neutral-100 ">
         <nav>
             <div class="nav flex  justify-between">
@@ -45,7 +45,7 @@
                     <nuxt-img class="w-16 h-16 rounded-full" :src="infos[0].user_profile" alt="" />
                 </div>
                 <div class="flex-col text-white pl-3">
-                    <p>{{ infos[2].name }}</p>
+                    <p>{{ infos[1].name }}</p>
                     <p>ผู้ติดตาม {{ infos[0].follow }}</p>
                 </div>
                 <div class="vv pl-32  ">

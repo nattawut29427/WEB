@@ -8,7 +8,7 @@
         "user_profile": "https://i.pinimg.com/564x/1c/56/d1/1c56d1e6e3f002f4109a1f59e56cf292.jpg",
         "product_img" : "https://scontent.fbkk4-5.fna.fbcdn.net/v/t39.30808-6/421466712_391017450136289_7230423663838000432_n.jpg?stp=cp6_dst-jpg&_nc_cat=101&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeHgUstnqTwpeHptBPaZBDkzLbP443Qq9lAts_jjdCr2UGczxRtbznFNXsLzDjBB6WWm2jfaqcwJOJgJk_1cMfs-&_nc_ohc=z_mgCgblJ6kAX8HeNF9&_nc_zt=23&_nc_ht=scontent.fbkk4-5.fna&oh=00_AfDHmeqYVxBggtShTa7CdhPAlDVamsbza-uKTzuxyrlKgw&oe=65E1EA48",
         "Time":"14 February 2024",
-        "link_page":"/login/products/sell/ipro1"
+        "link_page":"/traveler/products/rpro1"
     },
     {
         "id":2,
@@ -19,7 +19,7 @@
         "user_profile": "https://i.pinimg.com/564x/51/6c/f7/516cf7265a49ba343a9af949dee84bb3.jpg",
         "product_img" : "https://down-th.img.susercontent.com/file/sg-11134201-7qvdu-ljky7jwz97lj9a",
         "Time":"14 February 2024",
-        "link_page":"/login/products/sell/ipro2"
+        "link_page":"/traveler/products/rpro2"
 
     },
     {
@@ -31,7 +31,7 @@
         "user_profile": "https://i.pinimg.com/564x/1c/56/d1/1c56d1e6e3f002f4109a1f59e56cf292.jpg",
         "product_img" : "https://down-th.img.susercontent.com/file/sg-11134201-7rbkj-lm50tin1o97tfa",
         "Time":"14 February 2024",
-        "link_page":"/login/products/sell/ipro5"
+        "link_page":"/traveler/products/rpro5"
     },
 
     {
@@ -43,7 +43,7 @@
         "user_profile": "https://i.pinimg.com/564x/72/08/21/7208213e9425c1be6a9427d56dd68f56.jpg",
         "product_img" : "https://down-th.img.susercontent.com/file/sg-11134201-7rbkj-lm50tin1o97tfa",
         "Time":"14 February 2024",
-        "link_page":"/login/products/sell/ipro4"
+        "link_page":"/traveler/products/rpro4"
     }
 
 

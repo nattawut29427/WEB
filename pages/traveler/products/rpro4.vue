@@ -1,28 +1,28 @@
 <template>
-    <HeaderLogin />
-    <Breadcrumblog/>
+    <Header/>
+    <Breadcrumbre/>
     <div class="container max-w-[1000px] m-auto bg-neutral-100 ">
         <nav>
             <div class="nav flex  justify-between">
                 <div class="navv flex w-[500px] pl-2 ">
                     <div class="image-container flex justify-center items-center h-full  ">
-                        <NuxtImg class="img max-w-full max-h-full object-contain" :src="infos[1].img1"/>
+                        <NuxtImg class="img max-w-full max-h-full object-contain" :src="infos[3].img1"/>
                     </div>
-                    <div class="imge w-[145px] h-fit p-4 flex flex-wrap gap-5 ">
-                        <nuxtImg  class="w-full" :src="infos[1].img2" alt="" />
-                        <nuxtImg  class="w-full" :src="infos[1].img3" alt="" />
-                        <nuxtImg  class="w-full"  :src="infos[1].img4" alt="" />
-                        <nuxtImg  class="w-full" :src="infos[1].img5" alt="" />
+                    <div class="imge w-[125px] p-4 flex flex-wrap gap-5 ">
+                        <nuxtImg  class="w-full" :src="infos[3].img2" alt="" />
+                        <nuxtImg  class="w-full" :src="infos[3].img3" alt="" />
+                        <nuxtImg  class="w-full"  :src="infos[3].img4" alt="" />
+                        <nuxtImg  class="w-full" :src="infos[3].img5" alt="" />
                         
                     </div>
                 </div>
                 <div class="navvv pr-2 pt-10 w-[50%]">
-                    <h3 class="h3 text-xl text-M_Blue font-bold">{{ infos[1].product_name }}</h3>
+                    <h3 class="h3 text-xl text-M_Blue font-bold">{{ infos[3].product_name }}</h3>
                     <br><br>
                     
                     <div class="flex justify-between text-2xl font-bold">
                         <h2>ราคา</h2>
-                        <h2><span class="text-M_Blue">{{ infos[1].product_price }}</span> <span class="text-red-500">บาท</span></h2><br>
+                        <h2><span class="text-M_Blue">{{ infos[3].product_price }}</span> <span class="text-red-500">บาท</span></h2><br>
                     </div>
                     <br>
                     
@@ -30,10 +30,10 @@
                         <p class=" text-blue text-lg font-bold">รายละเอียดเพิ่มเติม</p>
                         <div class="flex">
                             <div>
-                                <span class="text-M_Blue">สถานะสินค้า :</span> <span class="text-red-500">เสื้อ มือสอง</span><br>
-                                <span class="text-M_Blue">ยี่ห้อ :</span> <span class="text-red-500">-</span><br>
-                                <span class="text-M_Blue">ขนาด :</span> <span class="text-red-500">Size L </span><br>
-                                <span class="text-M_Blue">ประเภท :</span> <span class="text-red-500">เสื้อ</span><br>
+                                <span class="text-M_Blue">สถานะสินค้า :</span> <span class="text-red-500">มือหนึ่ง</span><br>
+                                <span class="text-M_Blue">ยี่ห้อ :</span> <span class="text-red-500">เสื้อบอล</span><br>
+                                <span class="text-M_Blue">ขนาด :</span> <span class="text-red-500">Size Xl</span><br>
+                                <span class="text-M_Blue">ประเภท :</span> <span class="text-red-500">เสื้อบอล</span><br>
             
                             </div>
                         </div>                
@@ -50,11 +50,11 @@
         <div class=" flex">
             <div class="hero w-[50%] h-32 br-5 rounded-2xl flex bg-gradient-to-r from-blue to-cyc   ">
                 <div class="justify-start pl-3 ">
-                    <nuxt-img class="w-16 h-16 rounded-full" :src="infos[1].user_profile" alt="" />
+                    <nuxt-img class="w-16 h-16 rounded-full" :src="infos[3].user_profile" alt="" />
                 </div>
                 <div class="flex-col text-white pl-3">
-                    <p>{{ infos[1].name }}</p>
-                    <p>ผู้ติดตาม {{ infos[1].follow }}</p>
+                    <p>{{ infos[3].name }}</p>
+                    <p>ผู้ติดตาม {{ infos[3].follow }}</p>
                 </div>
                 <div class="vv pl-32  ">
                     <div class=" ml-3 w-full flex ">
@@ -72,8 +72,8 @@
                     <p class=" text-blue text-lg font-bold">รายละเอียดเพิ่มเติม</p>
                     <div class="flex">
                         <div>
-                            <span >- สภาพใหม่เหมือนไม่เคยใส่</span> <br>
-                            <span >- นัดรับได้แถวหน้ามอ</span> <br>
+                            <span >- มือหนึ่ง ไม่ใส่</span> <br>
+                            <span >- ต่อรองได้</span> <br>
                             <span >- หรือจัดส่ง EMS ฟรี</span> <br>
                         </div>
                     </div>                

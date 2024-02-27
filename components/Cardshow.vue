@@ -6,13 +6,13 @@
       </h1>
     </div>
 
-    <div class=" grid grid-cols-2 ml-8 mr-4 gap-y-6 lg:flex text-center lg:gap-2 lg:ml-10 mt-[150px] lg:mt-[250px] justify-center">
+    <div class=" grid grid-cols-2 ml-8 mr-4 gap-y-6 lg:flex  text-center lg:gap-2 lg:-scroll lg:ml-96 mt-[150px] lg:mt-[250px] justify-start">
       <div
         v-for="user2 in users2"
         :key="user2.id"
         class="card jus card-compact w-[180px]  lg:w-[300px] bg-base-100 shadow-xl"
       >
-         <NuxtLink :to="user2.link_page" target="_blank">
+        <NuxtLink :to="user2.link_page" target="_blank">
           <figure>
             <nuxt-img class="h-[200px] lg:h-[320px] w-fit" :src="user2.product_img" alt="" />
           </figure>
@@ -43,7 +43,7 @@
 </template>
 
 <script setup>
-import userData from "/Data/DB_card2.json";
+import userData from "/Data/DB_me.json";
 import { ref } from "vue";
 
 

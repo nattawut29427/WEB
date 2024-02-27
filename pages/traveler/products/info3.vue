@@ -1,6 +1,6 @@
 <template>
-    <HeaderLogin />
-    <Breadcrumb/>
+    <Header />
+    <Breadcrumb2/>
     <div class="container max-w-[1000px] m-auto bg-neutral-100 ">
         <nav>
             <div class="nav flex  justify-between">

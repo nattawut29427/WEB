@@ -1,5 +1,5 @@
 <template>
-    <Header/>
+    <HeaderLogin />
     <Breadcrumb/>
     <div class="container max-w-[1000px] m-auto bg-neutral-100 ">
         <nav>

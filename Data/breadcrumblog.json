@@ -1,7 +1,7 @@
 
 [
     { "name": "หน้าแรก", "link": "/login/home" },
-    { "name": "หน้าสินค้าประมูล", "link": "/login/products/action" },
+    { "name": "รายการสินค้า", "link": "/login/products" },
     { "name": "รายละเอียดสินค้า"}
   ]
   

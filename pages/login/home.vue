@@ -10,7 +10,7 @@
     </h1>
   </div> 
    <div class="ml-9" >
-    <Card  :endtime="endtime"/>
+    <Cardlog  :endtime="endtime"/>
   </div>
   <div class="ml-4">
     <Card2 :hname="'สินค้าล่าสุด'"/>  

@@ -65,13 +65,13 @@
                     <div class="flex">
                         <div>
                             <span class="text-M_Blue">สถานะสินค้า:</span> <span class="text-red-500">มือสองสภาพใหม่ๆ</span><br>
-                            <span class="text-M_Blue">วันที่เริ่มประมูล:</span> <span class="text-red-500">16/01/2024</span><br>
-                            <span class="text-M_Blue">วันที่สิ้นสุดการประมูล:</span> <span class="text-red-500">19/01/2004</span>
+                            <span class="text-M_Blue">วันที่เริ่มประมูล:</span> <span class="text-red-500">29/02/2024</span><br>
+                            <span class="text-M_Blue">วันที่สิ้นสุดการประมูล:</span> <span class="text-red-500">01/03/2004</span>
                         </div>
                         <div class="pl-20">
-                            <span class="text-M_Blue">ยี่ห้อ:</span> <span class="text-red-500">Nixe Hoodio</span><br>
-                            <span class="text-M_Blue">ขนาด:</span> <span class="text-red-500">M</span><br>
-                            <span class="text-M_Blue">ประเภท:</span> <span class="text-red-500">เสื้อผ้า</span>
+                            <span class="text-M_Blue">ยี่ห้อ:</span> <span class="text-red-500">Nike</span><br>
+                            <span class="text-M_Blue">ขนาด:</span> <span class="text-red-500">Size 41</span><br>
+                            <span class="text-M_Blue">ประเภท:</span> <span class="text-red-500">รองเท้า</span>
                         </div>
                     </div>                    
                 </div>
@@ -83,8 +83,8 @@
     <div class="container max-w-[1000px] m-auto pt-10">
         <div class="font-bold text-lg">รายละเอียดเพิ่มเติม</div>
         <ul class="inline-block">
-            <li>Vintage Y2K Nike Red Hoodie</li><br>
-            <li>Size : (22/28)</li>
+            <li>รองเท้า Nike</li><br>
+            <li>Size : 41</li>
             <li>ตำหนิ : -</li>
             <li>สภาพ: 10/10</li>
             <li>ปิดด่วน : 1,600 THB</li><br>

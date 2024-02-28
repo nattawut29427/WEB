@@ -65,8 +65,8 @@
                     <div class="flex">
                         <div>
                             <span class="text-M_Blue">สถานะสินค้า:</span> <span class="text-red-500">มือสองสภาพใหม่ๆ</span><br>
-                            <span class="text-M_Blue">วันที่เริ่มประมูล:</span> <span class="text-red-500">16/01/2024</span><br>
-                            <span class="text-M_Blue">วันที่สิ้นสุดการประมูล:</span> <span class="text-red-500">19/01/2004</span>
+                            <span class="text-M_Blue">วันที่เริ่มประมูล:</span> <span class="text-red-500">01/03/2024</span><br>
+                            <span class="text-M_Blue">วันที่สิ้นสุดการประมูล:</span> <span class="text-red-500">02/03/2004</span>
                         </div>
                         <div class="pl-20">
                             <span class="text-M_Blue">ยี่ห้อ:</span> <span class="text-red-500">Nixe Hoodio</span><br>
@@ -84,12 +84,12 @@
         <div class="font-bold text-lg">รายละเอียดเพิ่มเติม</div>
         <ul class="inline-block">
             <li>Vintage Y2K Nike Red Hoodie</li><br>
-            <li>Size : (22/28)</li>
+            <li>Size : (21/26)</li>
             <li>ตำหนิ : -</li>
-            <li>สภาพ: 10/10</li>
-            <li>ปิดด่วน : 1,600 THB</li><br>
-            <li>ค่าจัดส่ง +40 หรือนัดรับหน้ามอ</li>
-            <li>*งานมือสองขอคนรับได้ อาจมีตำหนิเล็กน้อย*</li>
+            <li>สภาพ: ดี</li>
+            <li>ปิดด่วน : 600 THB</li><br>
+            <li>นัดรับหน้ามอ</li>
+            <li>*อาจมีตำหนิเล็กน้อย*</li>
             
         </ul>
     </div>

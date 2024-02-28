@@ -6,13 +6,13 @@
             <div class="nav flex  justify-between">
                 <div class="navv flex w-[500px] pl-2 ">
                     <div class="image-container flex justify-center items-center h-full  ">
-                        <NuxtImg class="img max-w-full max-h-full object-contain" :src="infos[3].img1"/>
+                        <NuxtImg class="img max-w-full max-h-full object-contain" :src="infos[4].img1"/>
                     </div>
                     <div class="imge w-[125px] p-4 flex flex-wrap gap-5 ">
-                        <nuxtImg  class="w-full" :src="infos[3].img2" alt="" />
-                        <nuxtImg  class="w-full" :src="infos[3].img3" alt="" />
-                        <nuxtImg  class="w-full"  :src="infos[3].img4" alt="" />
-                        <nuxtImg  class="w-full" :src="infos[3].img5" alt="" />
+                        <nuxtImg  class="w-full" :src="infos[4].img2" alt="" />
+                        <nuxtImg  class="w-full" :src="infos[4].img3" alt="" />
+                        <nuxtImg  class="w-full"  :src="infos[4].img4" alt="" />
+                        <nuxtImg  class="w-full" :src="infos[4].img5" alt="" />
                         
                     </div>
                 </div>

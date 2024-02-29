@@ -57,7 +57,7 @@
                   <a><img src="/pic/Info.png" alt="" />ช่วยเหลือ</a>
                 </li>
                 <li>
-                  <a href="test-two-orcin-98.vercel.app"
+                  <a href="/"
                     ><img
                       src="/pic/Sign_in_squre_fill.png"
                       alt=""

@@ -45,7 +45,7 @@
       </div>
       <a
         class="btn btn-ghost text-[32px] font-bold text-white ml-[2] lg:ml-0"
-        href="test-two-orcin-98.vercel.app"
+        href="/"
         >Second UP</a
       >
     </div>

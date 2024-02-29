@@ -37,21 +37,17 @@
   <div class="flex justify-between h-auto">
     <div class="w-[860px] ml-[262px] rounded-xl bg-[#AEC8FC]">
       <div class="text-[#1A37A7] text-3xl  font-bold p-2 pb-0 ml-5 flex justify-between">
-        ร้านเราขายทุกย่างยกเว้นของมีคุณภาพ
+        ร้าน ออยเองงง
         <img src="/pic/Edit_light.png" class="w-7 h-7 mt-2 mr-2 cursor-pointer" />
       </div>
       <div class="w-[760px] ml-[28px] mt-4 rounded-xl mb-7 bg-white">
         <div class="w-5/6 pl-5 p-4 text-sm">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-          inventore officiis consequuntur earum deleniti illo deserunt vel,
-          quod, delectus aliquid in sed? Ducimus aut accusantium libero ad
-          molestias aperiam harum. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Voluptatem nemo non aliquam excepturi, sit molestiae
-          quae quasi ipsam quidem, autem nesciunt illum culpa molestias sed!
-          Omnis debitis explicabo deleniti nemo. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Pariatur mollitia incidunt nemo quas
-          accusamus corporis, quia cupiditate voluptates repudiandae facere
-          quibusdam dicta. Fugit, ipsum. Earum lor
+          <p>- ของทุกชิ้นใช่เอง สภาพดีเหมือนใหม่เเน่นอน</p>
+          <p>- สามารถนัดรับได้เเถวหน้า มอ</p>
+          <p>- หรือจัดส่ง EMS Flash Express</p>
+          <p>- ของดีราคาถูกสมเหตุสมผล</p>
+          <p></p><br>
+          <p></p><br>
         </div>
       </div>
     </div>
@@ -60,7 +56,7 @@
         ช่องทางการติดต่อ
         <img src="/pic/Edit_light.png" class="w-7 h-7 mt-2 mr-2" />
       </div>
-      <div class="w-[375px] h-[172px] mt-2 ml-[28px] pl-5 p-3 rounded-xl bg-white">
+      <div class="w-[375px] h-[172px] ml-[28px] pl-5 p-3 rounded-xl bg-white">
         <div class="flex items-center justify-between mb-4 w-full">
           <div class="flex items-center  gap-2">
             <p><Icon name="i-logos-facebook" class="text-[30px]"/></p>

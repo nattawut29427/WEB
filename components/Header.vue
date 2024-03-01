@@ -49,7 +49,7 @@
         >Second UP</a
       >
     </div>
-    <div class="navbar-end hidden  mr-[262px] mt-12 lg:flex">
+    <div class="navbar-end hidden  mt-12 lg:flex">
       <ul class="menu menu-horizontal flex px-2">
         <div class="flex">
           <button onclick="my_modal_5.showModal()"><li><img src="/pic/Favorite.png" alt="" /></li></button>

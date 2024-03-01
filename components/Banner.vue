@@ -1,6 +1,6 @@
 
 <template>
-  <div class="inline-flex relative carousel w-[350px] h-[250px] mx-[40px] mt-[190px] lg:w-[1200px] lg:h-[350px] lg:mx-[370px] lg:mt-[200px]">
+  <div class="inline-flex relative carousel w-[350px] h-[250px] mx-[40px] mt-[190px] lg:w-[1200px] lg:h-[350px] lg:mx-[150px] lg:mt-[200px]">
     <div class="flex">
       <div v-for="(pic, index) in pics" :key="pic.pic" class="w-full pic min-w-full transition-opacity duration-1000" :class="{ 'opacity-0': currentPicIndex !== index, 'opacity-100': currentPicIndex === index }">
         <img

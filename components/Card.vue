@@ -36,7 +36,7 @@
       <NuxtLink  :to=user.link_page><figure class="relative">
         <nuxt-img class="h-[300px] lg:h-[320px] w-auto" :src="user.product_img" alt="" /> 
         <a></a><button
-          class="btn bg-D_Black border-0 font-thin text-[16px]  text-white absolute w-[130px] bottom-0 right-3 mb-2 text-center hover:bg-T-gray lg:ml-[250px] lg:mt-[250px] rounded-3xl h-[45px]"
+          class="btn bg-D_Black border-0 font-thin text-[16px]  text-white absolute w-[130px] bottom-0 right-3 mb-2 text-center hover:bg-T-gray lg:ml-[230px] lg:mt-[250px] rounded-3xl h-[45px]"
         >
              เข้าร่วมประมูล
         </button>
